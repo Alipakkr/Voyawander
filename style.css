@@ -1,5 +1,194 @@
 /* <!-- alipa --> */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+   /* --------------ALIPA---------------- */
+  .header1 {
+    background-color: rgb(83, 200, 246);
+    color: black;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .head2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+    margin-bottom: 1.5rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;}
+  
+  .head2 .head3 .heads {
+    text-decoration: none;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    padding: 15px;
+    transition: color 0.3s;
+    font-size: 20px;
+  }
+  
+  .head2 .head3 .heads:hover {
+    color: rgb(83, 200, 246);
+  }
+  
+  .head2 .logo {
+    color: linear-gradient(
+      to right,
+      rgba(3, 170, 254, 0.923),
+      rgb(0, 222, 255)
+    );
+    font-weight: bold;
+    font-size: 1.5em;
+    text-decoration: none;
+    margin-left: 30px;
+    padding-left: 50px;
+  }
+  
+  .head2 .head3 {
+    width: 60%;
+    color: white;
+    padding: 18px 0px;
+    text-align: right;
+    margin-right: 80px;
+  }
+  /* <!-- main image container --> */
+  .body1 {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding-bottom: 140px;
+  }
+  .body1 .headertext h1 {
+    font-size: 3.5rem;
+    
+  }
+  .body1 .headertext p {
+    font-size: 1.3rem;
+    line-height: 30px;
+  }
+  .body1 .headertext button {
+    font-size: 1rem;
+    border-radius: 30px;
+    border: none;
+    background: linear-gradient(
+      to right,
+      rgba(3, 170, 254, 0.923),
+      rgb(0, 222, 255)
+    );
+    padding: 10px 15px;
+    margin-top: 20px;
+    color: white;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+  
+  /* <!-- image --> */
+  .headimgdiv {
+    position: relative;
+    width: 90%;
+    padding-top: 80px;
+  }
+  
+  .headerphoto1 {
+    position: relative;
+    z-index: 1;
+  }
+  .headerphoto1 img {
+    border-radius: 600px;
+    size: 30px;
+    height: 420px;
+    width: 270px;
+  }
+  
+  .headerphoto2 {
+    position: absolute;
+    top: 126px;
+    left: 155px;
+    z-index: 2;
+    padding-top: 80px;
+  }
+  
+  .headerphoto2 img {
+    border-radius: 600px;
+    border: 10px solid white;
+    size: 30px;
+    height: 340px;
+    width: 240px;
+  }
+  /* <!-- text --> */
+  .headertext {
+    width: 50%;
+    font-family: 'DM Serif Display', serif;
+  }
+  .body2{
+    text-align: center;
+    padding-top: 200px;
+    font-size: 20px;
+    background-image: url(skyphoto.jpeg);
+  }
 
+
+
+
+
+
+
+
+
+
+/* --------------ANJALI ---------------- */
+
+
+
+
+
+
+
+
+
+
+
+ /* --------------ANSHU  ---------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+ /* --------------KUNDAN  ---------------- */
+
+
+
+
+
+
+
+
+
+
+
+ /* --------------SUPRIYA  ---------------- */
+
+
+
+
+
+
+
+
+
+
+
+ /* -------------- VIKAS  ---------------- */
 
 
 
