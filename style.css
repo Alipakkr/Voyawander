@@ -164,11 +164,53 @@
 
 
 
- /* --------------KUNDAN  ---------------- */
+ /* --------------KUNDAN   section5---------------- */
+.MountainSection{
+  width: 100%;
+  height: 450px;
+}
+.h1form{
+  width: fit-content;
+  padding-top: 15px;
+  margin: auto;
+  padding-bottom: 10px;
+}
+.Formpara{
+  margin: auto;
+  width: fit-content;
+}
 
-
-
-
+.fullForm{
+  display: flex;
+  width: 50%;
+  margin: auto;
+  flex-direction: column;
+}
+.TouchForm{
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  padding-top: 60px;
+  margin: auto;
+}
+.input{
+  color: gray;
+  border: none;
+  width: 100%;
+  border-bottom: 1px solid grey;
+}
+.textarea{
+  padding-top: 100px;
+  width: 100%;
+  margin: auto;
+}
+.input1{
+  width: 98%;
+  border: none;
+  color: gray;
+  margin-left: 1%;
+  border-bottom: 1px solid grey;
+}
 
 
 
