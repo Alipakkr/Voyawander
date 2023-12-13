@@ -137,8 +137,6 @@
 
 
 
-
-
 /* --------------ANJALI ---------------- */
 
 
@@ -211,7 +209,19 @@
   margin-left: 1%;
   border-bottom: 1px solid grey;
 }
-
+.button{
+  padding-top: 50px;
+  margin: auto;
+  width: fit-content;
+}
+.btn{
+  color: white;
+  width: 120px;
+  background-color: #16dbff;
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+}
 
 
 
