@@ -1,0 +1,7 @@
+# Dependency directories
+node_modules/
+node_modules
+public/images-raw
+public/images-raw/
+server.rest/
+server.rest
