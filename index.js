@@ -23,7 +23,9 @@
 
 
     // <!-- Kundan  -->
-
+    function myfun(){
+        alert("Sent Successfully");
+    }
 
 
 
