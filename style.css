@@ -343,6 +343,50 @@ button {
 
 }
 
+.section5 {
+  margin-bottom: 50px;
+}
+
+
+/* ----------------Footer styling----------------- */
+.footer {
+  height: 300px;
+  width: 100%;
+  gap: 100px;
+  background-color: #ddf3ff;
+}
+
+.footermain {
+  display: flex;
+  width: 90%;
+  gap: 20%;
+  margin: 60px auto auto auto;
+}
+
+.imageicon {
+  width: fit-content;
+  height: 40px;
+}
+.imageiconf{
+  height: 38px;
+}
+
+.contensection {
+  margin-top: 110px;
+  width: 50%;
+}
+
+.iconsection {
+  display: flex;
+  gap: 10px;
+  justify-content: end;
+  align-items: baseline;
+  margin-top: 170px;
+  width: 50%;
+}
+
+/* ----------------------------------------------------------------------- */
+
 .card p {
   color: gray;
 }
