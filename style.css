@@ -324,22 +324,23 @@ button {
 }
 
 .button {
-  padding-top: 50px;
+  padding-top: 30px;
   margin: auto;
   width: fit-content;
 }
 
 .btn {
-  color: white;
-  height: auto;
-  width: 150px;
-  background: linear-gradient(to right,
-  rgba(3, 170, 254, 0.923),
-  rgb(0, 222, 255));
-  padding: 20px;
-  border-radius: 15px;
+  font-size: 1rem;
+  border-radius: 30px;
   border: none;
-  
+  background: linear-gradient(to right, rgba(3, 170, 254, 0.923), rgb(0, 222, 255));
+  padding: 10px;
+  color: white;
+  letter-spacing: 1px;
+  cursor: pointer;
+  width: 160px;
+  height: 50px;
+
 }
 
 .card p {
