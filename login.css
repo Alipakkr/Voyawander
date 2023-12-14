@@ -1,3 +1,7 @@
+*{
+    padding: 0;
+    margin: 0;
+}
 .head2 {
     display: flex;
     justify-content: space-between;
@@ -38,3 +42,160 @@
     text-align: right;
     margin-right: 80px;
   }
+  #login-form {
+    width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+#login-form-heading {
+    font-weight: 600;
+    font-size: 30px;
+    margin: auto;
+}
+
+
+
+form {
+    margin-top: 20px;
+    width: 100%;
+    min-width: 400px;
+}
+
+#links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+#links > div {
+    display: flex;
+    width: 130px;
+    height: 50px;
+    border-radius: 30px;
+    justify-content: space-between;
+    padding: 10px 15px 10px 0px;
+    align-items: center;
+    margin: 10px;
+    color: white;
+    cursor: pointer;
+}
+#links > div:nth-child(1) {
+    background-color: #3d5595;
+}
+#links > div:nth-child(1) img {
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+}
+
+#links > div:nth-child(1) > span {
+    justify-content: center;
+}
+
+#links > div:nth-child(2) {
+    background-color: #4285f4;
+}
+
+#links > div:nth-child(2) img {
+    width: 65px;
+    height: 43px;
+    border-radius: 30px;
+    padding: 12px 20px;
+    background-color: white;
+    margin-left: 1px;
+}
+
+#links > div:nth-child(3) {
+ background-color: #49a9f1;
+}
+
+#links > div:nth-child(3) img {
+    width: 60px;
+    height: 50px;
+    border-radius: 30px;
+    padding-left: 10px;
+}
+
+#form-text {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+hr {
+    width: 35%;
+    height: 1px;
+    align-self: center;
+}
+
+#form-text span {
+    text-transform: uppercase;
+    font-size: 80%;
+    width: 40%;
+}
+
+form p {
+    margin-top: 50px;
+}
+
+#input-taking > p {
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    margin-top: 45px;
+    font-weight: 100;
+}
+
+#input-taking {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 50px;
+}
+
+input {
+    height: 50px;
+    border-radius: 30px;
+    border: 1px solid rgba(128, 128, 128, 0.403);
+    padding: 10px;
+    margin: 10px 0px;
+}
+
+#input-taking > button {
+    height: 50px;
+    border-radius: 30px;
+    border: 0px;
+    margin-top: 50px;
+    background-color: #3c07ff;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+#input-taking p {
+    color: grey;
+}
+
+#input-taking a {
+    color: grey;
+}
+
+/* footer */
+
+@media all and (max-width: 800px) {
+    #login-form {
+        width: 400px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #login-form-heading {
+        text-align: center;
+        margin: auto;
+    }
+}
+
