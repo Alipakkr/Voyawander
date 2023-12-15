@@ -1,43 +1,46 @@
 .head2 {
+ 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 0;
-    margin-bottom: 1.5rem;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-}
-
-.head2 .head3 .heads {
+    /* padding: 5px 0; */
+    /* margin-bottom: 1.5rem; */
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+  }
+  
+  .head2 .head3 .heads {
     text-decoration: none;
     color: black;
     font-family: "Poppins", sans-serif;
-    padding: 26px;
+    padding: 22px;
     transition: color 0.3s;
-    font-size: 20px;
-}
-
-.head2 .head3 .heads:hover {
+    font-size: 18px;
+  }
+  
+  .head2 .head3 .heads:hover {
     color: rgb(83, 200, 246);
-}
-
-.head2 .logo {
+  }
+  
+  .head2 .logo {
     color: linear-gradient(to right,
-            rgba(3, 170, 254, 0.923),
-            rgb(0, 222, 255));
+        rgba(3, 170, 254, 0.923),
+        rgb(0, 222, 255));
     font-weight: bold;
     font-size: 1.5em;
     text-decoration: none;
-    margin-left: 30px;
+    margin-left: 23px;
     padding-left: 50px;
-}
-
-.head2 .head3 {
+  }
+  .head2 .logo a { 
+    text-decoration: none;
+  }
+  .head2 .head3 {
     width: 60%;
     color: white;
     padding: 18px 0px;
     text-align: right;
-    margin-right: 80px;
-}
+    margin-right: 20px;
+  }
 section {
     background-color: #f9f9f9;
     padding: 20px 0;
@@ -61,4 +64,40 @@ section ul {
     list-style: disc;
     margin-left: 20px;
     color: #666;
+}
+/* ----------------Footer styling----------------- */
+.footer {
+  height: 300px;
+  width: 100%;
+  gap: 100px;
+  background-color: #ddf3ff;
+}
+
+.footermain {
+  display: flex;
+  width: 90%;
+  gap: 20%;
+  margin: 60px auto auto auto;
+}
+
+.imageicon {
+  width: fit-content;
+  height: 40px;
+}
+.imageiconf{
+  height: 38px;
+}
+
+.contensection {
+  margin-top: 110px;
+  width: 50%;
+}
+
+.iconsection {
+  display: flex;
+  gap: 10px;
+  justify-content: end;
+  align-items: baseline;
+  margin-top: 170px;
+  width: 50%;
 }
