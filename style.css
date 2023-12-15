@@ -2,25 +2,25 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* font-family: , sans-serif; */
+  font-family: sans-serif;
 }
 
 /* --------------ALIPA---------------- */
 .header1 {
-  background-color: rgb(83, 200, 246);
   color: black;
-  padding: 3px;
+  padding: 5px;
   font-size: 15px;
   text-align: center;
-  
+  background: #00a3ff;
+  color: white;
 }
 
 .head2 {
- 
+  background: #e3f5ff;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 5px 0; */
+  padding: 5px 0;
   /* margin-bottom: 1.5rem; */
   /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
 }
@@ -38,15 +38,16 @@
   color: rgb(83, 200, 246);
 }
 
-.head2 .logo {
-  color: linear-gradient(to right,
-      rgba(3, 170, 254, 0.923),
-      rgb(0, 222, 255));
+.head2 .logo a {
+  color: linear-gradient(to right, rgba(3, 170, 254, 0.923), rgb(0, 222, 255));
   font-weight: bold;
   font-size: 1.5em;
   text-decoration: none;
   margin-left: 23px;
   padding-left: 50px;
+  color: black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .head2 .head3 {
@@ -59,40 +60,41 @@
 
 /* <!-- main image container --> */
 .body1 {
+  background: #e3f5ff;
   /* background-image: url(/image/Adventures\ in\ Australia.jpeg); */
   width: 100%;
   margin: auto;
   display: flex;
   align-items: center;
   padding-bottom: 140px;
+  padding-top: 30px;
   font-family: "Poppins", sans-serif;
-  
 }
 
 .body1 .headertext h1 {
   font-size: 3.5rem;
-
 }
 
 .body1 .headertext p {
   font-size: 16px;
-    line-height: 30px;
-    padding-right: 142px;
+  line-height: 30px;
+  padding-right: 142px;
 }
 
 .body1 .headertext button {
   font-size: 1rem;
   border-radius: 30px;
   border: none;
-  background: linear-gradient(to right,
-      rgba(3, 170, 254, 0.923),
-      rgb(0, 222, 255));
+  background: linear-gradient(
+    to right,
+    rgba(3, 170, 254, 0.923),
+    rgb(0, 222, 255)
+  );
   padding: 10px 15px;
   margin-top: 15px;
   color: white;
   letter-spacing: 1px;
   cursor: pointer;
-
 }
 button {
   height: 48px;
@@ -104,7 +106,7 @@ button {
   position: relative;
   width: 90%;
   /* padding-top: 80px; */
-  padding-left: 161px
+  padding-left: 161px;
 }
 
 .headerphoto1 {
@@ -116,7 +118,7 @@ button {
   border-radius: 600px;
   size: 30px;
   height: 433px;
-    width: 273px;
+  width: 273px;
 }
 
 .headerphoto2 {
@@ -132,47 +134,67 @@ button {
   border: 10px solid white;
   size: 30px;
   height: 368px;
-    width: 255px;
+  width: 255px;
 }
 
 /* <!-- text --> */
 .headertext {
   width: 80%;
   padding-top: 115px;
-  font-family: 'DM Serif Display', serif;
+  font-family: "DM Serif Display", serif;
 }
 
-.dropdowndiv{
+.dropdowndiv {
+  position: absolute;
+  top: 41.2rem;
+  left: 20rem;
+  /* bottom: 1px; */
   display: flex;
-  gap: 30px;
+  gap: 40px;
   justify-content: center;
-  border: 1px solid red;
-  height: 100px;
- 
+  height: fit-content;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background: white;
 }
-.dropdowndiv1{
-  border: 1px solid blue;
+.dropdowndiv1 {
+  /* border: 1px solid blue; */
   text-align: center;
-  padding-top: 40px;
-  height: auto;
-  width: 200px;
-  color: grey;
-  font-size: 20px;
-
+  padding: 30px 60px;
+  color: #7e7c7c;
+  font-weight: 500;
+  /* height: auto; */
+  /* width: 200px; */
+  /* color: grey; */
+  /* font-size: 20px; */
 }
 
-
-
+.dropdowndiv div:nth-child(4) {
+  background: linear-gradient(
+    to right,
+    rgba(3, 170, 254, 0.923),
+    rgb(0, 222, 255)
+  );
+  border-radius: 10px;
+  color: white;
+  padding: 30px 70px;
+}
 
 .body2 {
   text-align: center;
-  padding-top: 200px;
+  padding-top: 100px;
   font-size: 25px;
   background-image: url("/image/skyphoto.jpeg");
 }
 
+.body2 p {
+  font-size: large;
+  width: 70%;
+  margin: auto;
+  letter-spacing: 1px;
+}
 /* boxes */
- /* .maindiv {
+/* .maindiv {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -184,20 +206,22 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding-top: 100px;
-   gap: 30px; 
- 
+  /* padding-top: 100px; */
+  margin-top: 70px;
+  gap: 30px;
 }
-
+.material-symbols-outlined {
+  height: 100px;
+}
 .body2__card {
   padding: 3rem 2rem;
   text-align: center;
-  height: 390px;
+  min-height: 400px;
+  height: fit-content;
   width: 350px;
   border-radius: 30px;
-  background-color:white;
-  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.05);
- 
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .body2__card span {
@@ -206,16 +230,20 @@ button {
   margin-bottom: 2rem;
   font-size: 3rem;
   color: var(--white);
-  background: linear-gradient(to right,
-  rgba(3, 170, 254, 0.923),
-  rgb(0, 222, 255));
+  background: linear-gradient(
+    to right,
+    rgba(3, 170, 254, 0.923),
+    rgb(0, 222, 255)
+  );
   border-radius: 100%;
 }
 
 .body2__card:nth-child(2) span {
-  background: linear-gradient(to right,
-  rgba(3, 170, 254, 0.923),
-  rgb(0, 222, 255));
+  background: linear-gradient(
+    to right,
+    rgba(3, 170, 254, 0.923),
+    rgb(0, 222, 255)
+  );
 }
 
 .body2__card:nth-child(3) span {
@@ -226,7 +254,17 @@ button {
   margin-bottom: 1rem;
   font-size: 1.2rem;
   font-weight: 600;
-  color: var(--text-dark);
+  /* Set the background-clip to text */
+  background-clip: text;
+  /* Apply gradient as background-image */
+  background-image: linear-gradient(
+    to right,
+    rgba(3, 170, 254, 0.923),
+    rgb(0, 222, 255)
+  );
+  /* Use transparent text color to allow the gradient to show through */
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .body2__card p {
@@ -234,14 +272,13 @@ button {
   line-height: 1.75rem;
 }
 
-
 /* .box {
   display: block;
     border-radius: 10px;
     height: 339px;
     display: flex;
     /* padding: 0px; */
-    /* width: 374px;
+/* width: 374px;
     padding-left: 21px;
     padding-right: 7px;
     padding-top: -25px;
@@ -249,48 +286,22 @@ button {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
 
 
- 
-.container {
-  width: 150px;
-  height: 70px;
-  padding-top: 50px;
-  padding-bottom: 70px;
-  margin-left: 70px;
-  margin-right: 70px";
-
-}
-
-.container h2 {
-  text-align: center;
-}
-
-
-
-
-
 /* --------------ANJALI ---------------- */
-
-
-
-
-
-
-
 
 /* --------------ANSHU  ---------------- */
 
 .mainsection3 {
   text-align: center;
-  margin:20px;
+  margin: 20px;
   justify-content: space-between;
 }
-.mainsection3 h1{
-  font-family: Arial, Helvetica, sans-serif;;
+.mainsection3 h1 {
+  font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 20px;
   justify-content: space-between;
   font-size: 50px;
 }
-.mainsection3 p{
+.mainsection3 p {
   font-family: Arial, Helvetica, sans-serif;
   justify-content: space-between;
   font-size: 25px;
@@ -299,8 +310,7 @@ button {
   max-width: 100%;
   height: auto;
   margin-top: 40px;
-  margin-bottom: 40px;;
-  
+  margin-bottom: 40px;
 }
 .card-container2 {
   display: flex;
@@ -337,12 +347,12 @@ button {
 }
 .card img {
   width: 100%;
-   height: 250px; 
+  height: 250px;
   object-fit: cover;
   border-radius: 30px;
 }
 #btn {
-  background-image: linear-gradient(90deg,#00adfd 0,#00c6fe 51%,#00e3fe);
+  background-image: linear-gradient(90deg, #00adfd 0, #00c6fe 51%, #00e3fe);
   border-radius: 40px;
   color: #fff;
   width: 100px;
@@ -351,41 +361,39 @@ button {
   padding-right: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
- 
-  margin:10px;
-  border:none;
+
+  margin: 10px;
+  border: none;
 }
 .price {
   font-size: 18px;
   /* padding-left: 2px; */
   font-weight: bold;
 }
-.bookprice{
-  display:flex;
+.bookprice {
+  display: flex;
 }
-.priceBox{
- margin-right: 90px;
+.priceBox {
+  margin-right: 90px;
 }
-.starts{
-  color:gray;
+.starts {
+  color: gray;
   font-size: 13px;
 }
-#more{
+#more {
   align-items: center;
   text-align: center;
   justify-content: center;
 }
-#explore{
-  background-image: linear-gradient(90deg,#00adfd 0,#00c6fe 51%,#00e3fe);
+#explore {
+  background-image: linear-gradient(90deg, #00adfd 0, #00c6fe 51%, #00e3fe);
   border-radius: 10px;
   justify-content: center;
   color: #fff;
   width: 150px;
   padding: 15px;
-  border:none;
- 
+  border: none;
 }
-
 
 /* --------------KUNDAN   section5---------------- */
 .MountainSection {
@@ -451,20 +459,22 @@ button {
   font-size: 1rem;
   border-radius: 30px;
   border: none;
-  background: linear-gradient(to right, rgba(3, 170, 254, 0.923), rgb(0, 222, 255));
+  background: linear-gradient(
+    to right,
+    rgba(3, 170, 254, 0.923),
+    rgb(0, 222, 255)
+  );
   padding: 10px;
   color: white;
   letter-spacing: 1px;
   cursor: pointer;
   width: 160px;
   height: 50px;
-
 }
 
 .section5 {
   margin-bottom: 50px;
 }
-
 
 /* ----------------Footer styling----------------- */
 .footer {
@@ -485,7 +495,7 @@ button {
   width: fit-content;
   height: 40px;
 }
-.imageiconf{
+.imageiconf {
   height: 38px;
 }
 
