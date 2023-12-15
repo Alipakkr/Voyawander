@@ -53,6 +53,9 @@
     margin-left: 23px;
     padding-left: 50px;
 }
+.head2 .logo a { 
+    text-decoration: none;
+  }
 
 .head2 .head3 {
     width: 60%;
