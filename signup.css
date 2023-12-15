@@ -1,8 +1,3 @@
-* {
-    padding: 0;
-    margin: 0;
-}
-
 .head2 {
 
     display: flex;
@@ -45,19 +40,17 @@
     margin-right: 20px;
 }
 
-#login-form {
+#signup-form {
     width: 500px;
     margin: auto;
     text-align: center;
 }
 
-#login-form-heading {
+#signup-form-heading {
     font-weight: 600;
     font-size: 30px;
     margin: auto;
 }
-
-
 
 form {
     margin-top: 20px;
@@ -82,11 +75,10 @@ form {
     align-items: center;
     margin: 10px;
     color: white;
-    cursor: pointer;
 }
 
 #links>div:nth-child(1) {
-    background-color: #3d5595;
+    background-color: #3D5595;
 }
 
 #links>div:nth-child(1) img {
@@ -99,13 +91,14 @@ form {
     justify-content: center;
 }
 
+
 #links>div:nth-child(2) {
-    background-color: #4285f4;
+    background-color: #4285F4;
 }
 
 #links>div:nth-child(2) img {
     width: 65px;
-    height: 43px;
+    height: 42px;
     border-radius: 30px;
     padding: 12px 20px;
     background-color: white;
@@ -113,7 +106,7 @@ form {
 }
 
 #links>div:nth-child(3) {
-    background-color: #49a9f1;
+    background-color: #50ABF2;
 }
 
 #links>div:nth-child(3) img {
@@ -174,11 +167,10 @@ input {
     border-radius: 30px;
     border: 0px;
     margin-top: 50px;
-    background-color: #3c07ff;
+    background-color: #3C07FF;
     color: white;
     font-size: 20px;
     letter-spacing: 2px;
-    cursor: pointer;
 }
 
 #input-taking p {
@@ -187,21 +179,6 @@ input {
 
 #input-taking a {
     color: grey;
-}
-
-/* footer */
-
-@media all and (max-width: 800px) {
-    #login-form {
-        width: 400px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    #login-form-heading {
-        text-align: center;
-        margin: auto;
-    }
 }
 
 /* ----------------Footer styling----------------- */

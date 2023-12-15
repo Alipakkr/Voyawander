@@ -16,6 +16,49 @@
   box-sizing: border-box;
 }
 
+.head2 {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 5px 0; */
+  /* margin-bottom: 1.5rem; */
+  /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+}
+
+.head2 .head3 .heads {
+  text-decoration: none;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  padding: 22px;
+  transition: color 0.3s;
+  font-size: 18px;
+}
+
+.head2 .head3 .heads:hover {
+  color: rgb(83, 200, 246);
+}
+
+.head2 .logo {
+  color: linear-gradient(to right,
+      rgba(3, 170, 254, 0.923),
+      rgb(0, 222, 255));
+  font-weight: bold;
+  font-size: 1.5em;
+  text-decoration: none;
+  margin-left: 23px;
+  padding-left: 50px;
+}
+
+.head2 .head3 {
+  width: 60%;
+  color: white;
+  padding: 18px 0px;
+  text-align: right;
+  margin-right: 20px;
+}
+
+
 .section__container {
   max-width: var(--max-width);
   margin: auto;
@@ -36,13 +79,14 @@
   font-size: 1rem;
   font-weight: 500;
   color: var(--white);
-  
+
   border-radius: 2rem;
   cursor: pointer;
   transition: 0.3s;
   background-image: linear-gradient(to right,
-  rgba(3, 170, 254, 0.923),
-  rgb(0, 222, 255));;
+      rgba(3, 170, 254, 0.923),
+      rgb(0, 222, 255));
+  ;
 }
 
 .btn:hover {
@@ -53,7 +97,7 @@
 img {
   width: 100%;
   display: flex;
- 
+
 }
 
 body {
@@ -89,8 +133,8 @@ body {
   flex: 1;
   padding: 1rem 2rem;
   font-weight: 500;
-  color: var(--text-light); 
-   text-align: center;
+  color: var(--text-light);
+  text-align: center;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -100,9 +144,10 @@ body {
   /*
    background-color: var(--primary-color); */
 }
-.booking__nav span:hover{
-     color: var(--white);
-    background-color: var(--primary-color); 
+
+.booking__nav span:hover {
+  color: var(--white);
+  background-color: var(--primary-color);
 
 }
 
@@ -149,16 +194,16 @@ body {
 }
 
 .booking__container input {
- width: 100%;
+  width: 100%;
   padding: 10px 0;
   font-size: 1rem;
   outline: none;
   border: none;
   border-bottom: 1px solid var(--primary-color);
-  color: var(--text-dark);  
-} 
+  color: var(--text-dark);
+}
 
-.booking__container input:focus ~ label {
+.booking__container input:focus~label {
   font-size: 0.8rem;
   top: 0;
 }
@@ -168,20 +213,22 @@ body {
   font-size: 0.8rem;
   color: var(--text-light);
 }
+
 .buttonClass {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* height: 100vh; Set the height to 100% of the viewport height for vertical centering */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; Set the height to 100% of the viewport height for vertical centering */
 }
+
 .booking__container .btn {
-   padding: 1rem;
-   margin-top: 70px;
+  padding: 1rem;
+  margin-top: 70px;
   font-size: 1.5rem;
   /* border: 1px solid red;  */
   width: 300px;
- 
-  
+
+
 
 }
 
@@ -350,7 +397,7 @@ body {
 
 
 .travellers__grid {
-   margin-top: 4rem;
+  margin-top: 4rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
@@ -387,14 +434,15 @@ body {
 
 .travellers__card__content p {
   font-weight: 500;
-  color: var(--text-light); 
-} 
+  color: var(--text-light);
+}
 
 
 
 
 
 @media (width < 1200px) {
+
   .section__container.header__container,
   .section__container.plan__container,
   .section__container.lounge__container {
@@ -451,6 +499,7 @@ body {
     gap: 2rem;
   }
 }
+
 @media (width < 600px) {
   .nav__links {
     display: none;
@@ -479,4 +528,42 @@ body {
   .travellers__grid {
     grid-template-columns: repeat(1, 1fr);
   }
+}
+
+/* ----------------Footer styling----------------- */
+.footer {
+  height: 300px;
+  width: 100%;
+  gap: 100px;
+  background-color: #ddf3ff;
+}
+
+.footermain {
+  display: flex;
+  width: 90%;
+  gap: 20%;
+  margin: 60px auto auto auto;
+}
+
+.imageicon {
+  width: fit-content;
+  height: 40px;
+}
+
+.imageiconf {
+  height: 38px;
+}
+
+.contensection {
+  margin-top: 110px;
+  width: 50%;
+}
+
+.iconsection {
+  display: flex;
+  gap: 10px;
+  justify-content: end;
+  align-items: baseline;
+  margin-top: 170px;
+  width: 50%;
 }
