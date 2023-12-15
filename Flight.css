@@ -36,10 +36,13 @@
   font-size: 1rem;
   font-weight: 500;
   color: var(--white);
-  background-color: var(--primary-color);
+  
   border-radius: 2rem;
   cursor: pointer;
   transition: 0.3s;
+  background-image: linear-gradient(to right,
+  rgba(3, 170, 254, 0.923),
+  rgb(0, 222, 255));;
 }
 
 .btn:hover {
@@ -50,6 +53,7 @@
 img {
   width: 100%;
   display: flex;
+ 
 }
 
 body {

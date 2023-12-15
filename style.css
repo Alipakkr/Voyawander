@@ -2,32 +2,36 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  /* font-family: , sans-serif; */
 }
 
 /* --------------ALIPA---------------- */
 .header1 {
   background-color: rgb(83, 200, 246);
   color: black;
-  padding: 10px;
+  padding: 3px;
+  font-size: 15px;
   text-align: center;
+  
 }
 
 .head2 {
+ 
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 0;
-  margin-bottom: 1.5rem;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  /* padding: 5px 0; */
+  /* margin-bottom: 1.5rem; */
+  /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
 }
 
 .head2 .head3 .heads {
   text-decoration: none;
   color: black;
   font-family: "Poppins", sans-serif;
-  padding: 26px;
+  padding: 22px;
   transition: color 0.3s;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .head2 .head3 .heads:hover {
@@ -41,7 +45,7 @@
   font-weight: bold;
   font-size: 1.5em;
   text-decoration: none;
-  margin-left: 30px;
+  margin-left: 23px;
   padding-left: 50px;
 }
 
@@ -50,26 +54,30 @@
   color: white;
   padding: 18px 0px;
   text-align: right;
-  margin-right: 80px;
+  margin-right: 20px;
 }
 
 /* <!-- main image container --> */
 .body1 {
-  width: 80%;
+  /* background-image: url(/image/Adventures\ in\ Australia.jpeg); */
+  width: 100%;
   margin: auto;
   display: flex;
   align-items: center;
   padding-bottom: 140px;
+  font-family: "Poppins", sans-serif;
+  
 }
 
 .body1 .headertext h1 {
-  font-size: 4.5rem;
+  font-size: 3.5rem;
 
 }
 
 .body1 .headertext p {
-  font-size: 1.3rem;
-  line-height: 30px;
+  font-size: 16px;
+    line-height: 30px;
+    padding-right: 142px;
 }
 
 .body1 .headertext button {
@@ -80,10 +88,15 @@
       rgba(3, 170, 254, 0.923),
       rgb(0, 222, 255));
   padding: 10px 15px;
-  margin-top: 20px;
+  margin-top: 15px;
   color: white;
   letter-spacing: 1px;
   cursor: pointer;
+
+}
+button {
+  height: 48px;
+  width: 180px;
 }
 
 /* <!-- image --> */
@@ -91,7 +104,7 @@
   position: relative;
   width: 90%;
   /* padding-top: 80px; */
-  padding-left: 36px
+  padding-left: 161px
 }
 
 .headerphoto1 {
@@ -102,14 +115,14 @@
 .headerphoto1 img {
   border-radius: 600px;
   size: 30px;
-  height: 500px;
-  width: 330px;
+  height: 433px;
+    width: 273px;
 }
 
 .headerphoto2 {
   position: absolute;
-  top: 126px;
-  left: 235px;
+  top: 130px;
+  left: 330px;
   z-index: 2;
   /* padding-top: 80px; */
 }
@@ -118,8 +131,8 @@
   border-radius: 600px;
   border: 10px solid white;
   size: 30px;
-  height: 450px;
-  width: 310px;
+  height: 368px;
+    width: 255px;
 }
 
 /* <!-- text --> */
@@ -129,46 +142,114 @@
   font-family: 'DM Serif Display', serif;
 }
 
+.dropdowndiv{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  border: 1px solid red;
+  height: 100px;
+ 
+}
+.dropdowndiv1{
+  border: 1px solid blue;
+  text-align: center;
+  padding-top: 40px;
+  height: auto;
+  width: 200px;
+  color: grey;
+  font-size: 20px;
+
+}
+
+
+
+
 .body2 {
   text-align: center;
   padding-top: 200px;
   font-size: 25px;
-  background-image: url(skyphoto.jpeg);
+  background-image: url("/image/skyphoto.jpeg");
 }
 
 /* boxes */
-.maindiv {
+ /* .maindiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 100px;
+   gap: 30px; 
+ 
+ } */
+.body2__grid {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   padding-top: 100px;
-  /* gap: 30px; */
-
+   gap: 30px; 
+ 
 }
 
-.box {
+.body2__card {
+  padding: 3rem 2rem;
+  text-align: center;
+  height: 390px;
+  width: 350px;
+  border-radius: 30px;
+  background-color:white;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.05);
+ 
+}
+
+.body2__card span {
+  display: inline-block;
+  padding: 20px 32px;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  color: var(--white);
+  background: linear-gradient(to right,
+  rgba(3, 170, 254, 0.923),
+  rgb(0, 222, 255));
+  border-radius: 100%;
+}
+
+.body2__card:nth-child(2) span {
+  background: linear-gradient(to right,
+  rgba(3, 170, 254, 0.923),
+  rgb(0, 222, 255));
+}
+
+.body2__card:nth-child(3) span {
+  background-color: #ffcca3;
+}
+
+.body2__card h4 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.body2__card p {
+  color: var(--text-light);
+  line-height: 1.75rem;
+}
+
+
+/* .box {
   display: block;
-  border-radius: 10px;
-  height: 455px;
-  display: flex;
-  padding: 0px;
-  width: 450px;
-  padding-left: 80px;
-  padding-right: 20px;
-  padding-top: 30px;
-  background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    height: 339px;
+    display: flex;
+    /* padding: 0px; */
+    /* width: 374px;
+    padding-left: 21px;
+    padding-right: 7px;
+    padding-top: -25px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
 
 
-}
-
-button {
-  margin-top: 60px;
-  border-radius: 4px;
-  height: 61px;
-  width: 225px
-}
-
+ 
 .container {
   width: 150px;
   height: 70px;
