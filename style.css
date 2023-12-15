@@ -279,20 +279,28 @@ button {
 
 /* --------------ANSHU  ---------------- */
 
- .mainsection3 {
+.mainsection3 {
   text-align: center;
   margin:20px;
+  justify-content: space-between;
 }
 .mainsection3 h1{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  font-size: 50px;
 }
 .mainsection3 p{
   font-family: Arial, Helvetica, sans-serif;
+  justify-content: space-between;
+  font-size: 25px;
 }
 #worldMap {
   max-width: 100%;
   height: auto;
-  margin-top: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;;
+  
 }
 .card-container2 {
   display: flex;
@@ -320,6 +328,7 @@ button {
   font-weight: bold;
   margin-bottom: 10px;
   text-align: center;
+  font-family: cursive;
 }
 .card-description {
   font-size: 0.9em;
@@ -338,6 +347,10 @@ button {
   color: #fff;
   width: 100px;
   padding: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
  
   margin:10px;
   border:none;
@@ -372,8 +385,6 @@ button {
   border:none;
  
 }
-
-
 
 
 /* --------------KUNDAN   section5---------------- */
