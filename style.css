@@ -47,13 +47,6 @@
   text-decoration: none;
   margin-left: 23px;
   padding-left: 50px;
-  
-}
-.head2 .logo a { 
-  text-decoration: none;
-  color: linear-gradient(to right,
-  rgba(3, 170, 254, 0.923),
-  rgb(0, 222, 255));
 }
 
 .head2 .head3 {
@@ -66,7 +59,6 @@
 
 /* <!-- main image container --> */
 .body1 {
-  background-image: url(/image/background\ image\ .png);
   /* background-image: url(/image/Adventures\ in\ Australia.jpeg); */
   width: 100%;
   margin: auto;
