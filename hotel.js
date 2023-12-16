@@ -1,5 +1,5 @@
 let boxPackageContainer=document.getElementsByClassName("box-package-container")[0];
-
+let classBoxPackage=document.getElementsByClassName("classBoxPackage")[0];
 const apiUrl='https://myfinalapi.onrender.com/destinations';
 const travelUrl=`${apiUrl}`
 
@@ -21,11 +21,14 @@ fetchHotels(travelUrl,pageNumber);
 
 //createMoreCard
 function renderHotel(data){
-    boxPackageContainer.innerHTML="";
+    // classBoxPackage.innerHTML="";
+    // let boxPackageContainer=document.createElement("div");
+    // boxPackageContainer.className="boxPackageContainer";
     data.forEach(item=>{
         let totalHotel=oneHotelCard(item);
         boxPackageContainer.appendChild(totalHotel);
     });
+    // classBoxPackage.appendChild(boxPackageContainer);
 }
 
 
@@ -81,7 +84,7 @@ loadMoreBtn.innerText = ">";
 loadMoreBtn.addEventListener("click", () => {
     pageNumber++;
     moveit-=500;
-    fetchHotels(travelUrl,"",pageNumber);
+    fetchHotels(apiUrl,"",pageNumber);
     boxPackageContainer.style.transform = `translate(${moveit}px)`;
     boxPackageContainer.style.transition = "transform 0.7s cubic-bezier(.22,.44,.06,1)";
 });
