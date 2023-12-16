@@ -64,6 +64,11 @@ function oneHotelCard(item){
     let anchorHotel=document.createElement("a");
     anchorHotel.className="btn";
     anchorHotel.innerText="Book now";
+
+    anchorHotel.addEventListener("click",function(){
+        window.location.href='payment.html';
+    });
+
      contentDiv.appendChild(anchorHotel);
 
     boxPackage.appendChild(imagePackage);

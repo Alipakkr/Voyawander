@@ -393,7 +393,9 @@ button {
   border: none;
  
 }
-
+#explore:hover{
+  transform: scale(1.05);
+}
 /* --------------KUNDAN   section5---------------- */
 .MountainSection {
   width: 100%;
