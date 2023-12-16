@@ -89,15 +89,15 @@ body {
   }
 
 /*------------------------------- Map section------------------------------------------- */
-.mapform{
+/* .mapform{
   background-image: url(/image/contactbackground.jpg);
-}
+} */
 .map_303 {
     width: 100%;
     height: 1248px;
     display: flex;
     flex-direction: column;
-    /* background-color: #f5f6fc; */
+    background-color: #f5f6fc;
   }
   .map_303 .mapimg_303 {
     width: 1170px;
@@ -221,8 +221,7 @@ body {
     line-height: 24px;
     letter-spacing: 0px;
     text-align: left;
-    color: white;
-    /* color: rgba(0, 0, 0, 0.5019607843); */
+    color: rgba(0, 0, 0, 0.5019607843);
   }
   .map_303 .form_303 .info_side2_303 .seconddiv_303 {
     width: 100%;
@@ -244,8 +243,7 @@ body {
     line-height: 32px;
     letter-spacing: 0px;
     text-align: left;
-    color: white;
-    /* color: rgba(0, 0, 0, 0.5019607843); */
+    color: rgba(0, 0, 0, 0.5019607843);
   }
   .map_303 .form_303 .info_side2_303 .thirddiv_303 {
     width: 100%;
@@ -267,9 +265,7 @@ body {
     line-height: 24px;
     letter-spacing: 0px;
     text-align: left;
-    /* color: rgba(0, 0, 0, 0.5019607843); */
-    color: white;
-
+    color: rgba(0, 0, 0, 0.5019607843);
   }
   .map_303 .form_303 .info_side2_303 .fourthdiv_303 {
     width: 100%;

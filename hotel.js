@@ -9,7 +9,7 @@ let pageNumber=1;
 //fetchData
 async function fetchHotels(travelUrl,pageNumber){
     try{
-        let res=await fetch(`${travelUrl}?_page=${pageNumber || 1}&_limit=6`);
+        let res=await fetch(`${travelUrl}?_page=${pageNumber || 1}&_limit=4`);
         let data=await res.json();
          renderHotel(data);
     }
@@ -39,6 +39,7 @@ function oneHotelCard(item){
     imagePackage.className="image-package";
 
     let imageHo =document.createElement("img");
+    imageHo.className="imageHotel";
     imageHo.src=item.hotelPhoto;
     imageHo.alt=item.name;
 

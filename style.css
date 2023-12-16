@@ -399,11 +399,14 @@ button {
 .MountainSection {
   width: 100%;
   height: 450px;
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
 
 .h1form {
   width: fit-content;
   padding-top: 15px;
+  font-size: 50px;
   margin: auto;
   padding-bottom: 10px;
 }
@@ -450,7 +453,7 @@ button {
 }
 
 .button {
-  padding-top: 30px;
+  padding-top: 80px;
   margin: auto;
   width: fit-content;
 }
@@ -470,6 +473,9 @@ button {
   cursor: pointer;
   width: 160px;
   height: 50px;
+}
+.button:hover{
+  transform: scale(1.01);
 }
 
 .section5 {
@@ -526,4 +532,9 @@ button {
 
 #bookprice {
   display: flex;
+}
+
+/* Alipa body2-card */
+.body2__card:hover{
+  transform: scale(1.08)
 }
