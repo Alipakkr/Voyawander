@@ -1,7 +1,10 @@
- *{
+* {
   padding: 0;
   margin: 0;
- }
+  box-sizing: border-box;
+  
+}
+
  /* navbar */
  .head2 {
   padding: 15px;
@@ -28,17 +31,17 @@
   color: rgb(83, 200, 246);
 }
 
-.head2 .logo {
-  color: linear-gradient(to right,
-      rgba(3, 170, 254, 0.923),
-      rgb(0, 222, 255));
+.head2 .logo a {
+  color: linear-gradient(to right, rgba(3, 170, 254, 0.923), rgb(0, 222, 255));
   font-weight: bold;
   font-size: 1.5em;
   text-decoration: none;
   margin-left: 23px;
   padding-left: 50px;
+  color: black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-
 .head2 .head3 {
   width: 60%;
   color: white;
