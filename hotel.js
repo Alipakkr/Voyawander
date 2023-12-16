@@ -7,9 +7,9 @@ const travelUrl=`${apiUrl}`
 let pageNumber=1;
 
 //fetchData
-async function fetchHotels(travelUrl,pageNumber){
+async function fetchHotels(travelUrl,condition,pageNumber){
     try{
-        let res=await fetch(`${travelUrl}?_page=${pageNumber || 1}&_limit=4`);
+        let res=await fetch(`${travelUrl}?${condition || ""}_page=${pageNumber || 1}&_limit=4`);
         let data=await res.json();
          renderHotel(data);
     }
@@ -77,7 +77,7 @@ let moveit = 0;
 // const loadMoreBtn = document.createElement("span");
 const loadMoreBtn = document.getElementsByClassName("load-more")[0];
 loadMoreBtn.className = "btn";
-loadMoreBtn.innerText = "Load More";
+loadMoreBtn.innerText = ">";
 loadMoreBtn.addEventListener("click", () => {
     pageNumber++;
     moveit-=500;
@@ -88,3 +88,16 @@ loadMoreBtn.addEventListener("click", () => {
 
 // Append Load More button to the correct container
 // document.querySelector('.load-more').appendChild(loadMoreBtn);
+
+
+
+//add functionality to drop down.
+
+
+
+//add functionality to low to high button.
+let highToLow=document.getElementById("high-to-low");
+
+highToLow.addEventListener("click",()=>{
+    fetchHotels(travelUrl,"_sort=price&_order=asc&")
+});
