@@ -4,13 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Payment</title>
     <link rel="stylesheet" href="payment.css">
+    <script src="https://kit.fontawesome.com/8609a682e1.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <!-- navbar -->
+    <div class="head2">
+        <div class="logo"><a href="index.html"> Voyawander</a></div>
+        <div class="head3">
+            <a class="heads" href="index.html">Home</a>
+            <a class="heads" href="about.html">About Us</a>
+            <a class="heads" href="hotel.html">Hotels</a>
+            <a class="heads" href="Flight.html">Flights</a>
+            <a class="heads" href="contact.html">Contact Us</a>
+            <a class="heads" href="login.html">Login</a>
+        </div>
+    </div>
     <!-- Payment form -->
-    
+    <div class="col-75">
         <div class="container">
             <form>
                 <h2 style="text-align: center;">Your Total Price:<span id="total"></span></h2>
@@ -75,9 +88,34 @@
                 <input type="submit" value="Continue to checkout" id="check" class="btn">
             </form>
         </div>
+    </div>
+    <!---------------- Footer section -------------------->
+    <div class="footer">
+        <div class="footermain">
+            <div class="contensection">
+                <h1>Voyagers</h1>
+                <p style="margin-top: 10px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+                    animi
+                    possimus, quos error nostrum
+                    officiis blanditiis, sequi recusandae repellendus suscipit aspernatur. Perspiciatis officiis debitis
+                    similique.</p>
+            </div>
+            <div class="iconsection">
+                <div>
+                    <a href="https://www.instagram.com/"><img class="imageicon" src="insta.png" alt="icon"></a>
+                </div>
+                <div>
+                    <a href="https://www.linkedin.com/checkpoint/lg/sign-in-another-account"><img class="imageicon"
+                            src="linkedin.png" alt="icon"></a>
+                </div>
+                <div>
+                    <a href="https://www.facebook.com/"><img class="imageiconf" src="facebook.png" alt="icon"></a>
+                </div>
+            </div>
+        </div>
 
-
-    <script src="payment.js"></script>
+    </div>
 </body>
+<script src="payment.js"></script>
 
 </html>
