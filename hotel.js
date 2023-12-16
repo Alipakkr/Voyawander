@@ -1,6 +1,5 @@
 let boxPackageContainer=document.getElementsByClassName("box-package-container")[0];
-let classBoxPackage=document.getElementsByClassName("classBoxPackage")[0];
-const apiUrl='https://myfinalapi.onrender.com/destinations';
+const apiUrl='https://quasarapi.onrender.com/destinations';
 const travelUrl=`${apiUrl}`
 
 
@@ -17,18 +16,15 @@ async function fetchHotels(travelUrl,condition,pageNumber){
         console.log(error);
     }
 }
-fetchHotels(travelUrl,pageNumber);
+fetchHotels(apiUrl,pageNumber);
 
 //createMoreCard
 function renderHotel(data){
-    // classBoxPackage.innerHTML="";
-    // let boxPackageContainer=document.createElement("div");
-    // boxPackageContainer.className="boxPackageContainer";
+
     data.forEach(item=>{
         let totalHotel=oneHotelCard(item);
         boxPackageContainer.appendChild(totalHotel);
     });
-    // classBoxPackage.appendChild(boxPackageContainer);
 }
 
 
@@ -94,15 +90,13 @@ loadMoreBtn.addEventListener("click", () => {
     boxPackageContainer.style.transition = "transform 0.7s cubic-bezier(.22,.44,.06,1)";
 });
 
-// Append Load More button to the correct container
-// document.querySelector('.load-more').appendChild(loadMoreBtn);
 
 
 //add functionality to drop down.
 
 //add sort to button.
 let highToLow = document.getElementById("high-to-low");
-highToLow.addEventListener("click", async () => {
+highToLow.addEventListener("click", (e)=> {
     fetchHotels(travelUrl, "_sort=price&_order=desc&");
   
 });
