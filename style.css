@@ -285,9 +285,6 @@ button {
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
 
-
-/* --------------ANJALI ---------------- */
-
 /* --------------ANSHU  ---------------- */
 
 .mainsection3 {
@@ -482,7 +479,7 @@ button {
   margin-bottom: 50px;
 }
 
-/* ----------------Footer styling----------------- */
+/* --Footer styling-- */
 .footer {
   height: 300px;
   width: 100%;
@@ -534,7 +531,7 @@ button {
   display: flex;
 }
 
-/* Alipa body2-card */
+/*-------------------------Hover Alipa body2-card --------------------------*/
 .body2__card:hover{
   transform: scale(1.08)
 }
