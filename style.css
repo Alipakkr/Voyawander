@@ -316,7 +316,7 @@ button {
   margin-top: 20px;
 }
 .card {
-  width: 400px;
+  /* width: 400px; */
   border: 1px solid #ccc;
   border-radius: 30px;
   margin: 10px;
@@ -348,7 +348,7 @@ button {
   object-fit: cover;
   border-radius: 30px;
 }
-#btn {
+.btn {
   background-image: linear-gradient(90deg, #00adfd 0, #00c6fe 51%, #00e3fe);
   border-radius: 40px;
   color: #fff;
@@ -382,6 +382,7 @@ button {
   text-align: center;
   justify-content: center;
 }
+
 #explore {
   background-image: linear-gradient(90deg, #00adfd 0, #00c6fe 51%, #00e3fe);
   border-radius: 10px;
@@ -390,8 +391,11 @@ button {
   width: 150px;
   padding: 15px;
   border: none;
+ 
 }
-
+#explore:hover{
+  transform: scale(1.05);
+}
 /* --------------KUNDAN   section5---------------- */
 .MountainSection {
   width: 100%;
