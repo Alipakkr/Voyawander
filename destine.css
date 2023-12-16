@@ -7,7 +7,7 @@
 
  /* navbar */
  .head2 {
-  padding: 15px;
+   padding: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -70,7 +70,7 @@ body {
    }
       
       .card {
-        width: 400px;
+        /* width: 400px; */
         border: 1px solid #ccc;
         border-radius: 30px;
         margin: 10px;
@@ -143,3 +143,7 @@ body {
         margin:10px;
         
       }
+
+
+
+      
