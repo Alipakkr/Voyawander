@@ -95,9 +95,52 @@ loadMoreBtn.addEventListener("click", () => {
 
 
 
-//add functionality to low to high button.
-let highToLow=document.getElementById("high-to-low");
+/// Function to sort hotels by price in ascending order (low to high)
+function sortHotelsByPriceAsc(data) {
+    data.sort((a, b) => {
+        // Assuming prices are in the format "$499", converting them to numbers for comparison
+        const priceA = parseInt(a.price.replace(/\D/g, ''));
+        const priceB = parseInt(b.price.replace(/\D/g, ''));
+        return priceA - priceB;
+    });
+    return data;
+}
 
-highToLow.addEventListener("click",()=>{
-    fetchHotels(travelUrl,"_sort=price&_order=asc&")
+// Function to sort hotels by price in descending order (high to low)
+function sortHotelsByPriceDesc(data) {
+    data.sort((a, b) => {
+        const priceA = parseInt(a.price.replace(/\D/g, ''));
+        const priceB = parseInt(b.price.replace(/\D/g, ''));
+        return priceB - priceA;
+    });
+    return data;
+}
+
+// Event listener for the "High to Low Price" button
+let highToLow = document.getElementById("high-to-low");
+highToLow.addEventListener("click", async () => {
+    try {
+        pageNumber = 1; 
+        let res = await fetch(`${travelUrl}?_sort=price&_order=desc&_page=${pageNumber || 1}&_limit=4`);
+        let data = await res.json();
+        data = sortHotelsByPriceDesc(data);
+        renderHotel(data);
+    } catch (error) {
+        console.log(error);
+    }
+});
+
+// Event listener for the "Low to High Price" button
+let lowToHigh = document.getElementById("low-to-high");
+lowToHigh.addEventListener("click", async () => {
+    try {
+        pageNumber = 1;
+        let res = await fetch(`${travelUrl}?_sort=price&_order=asc&_page=${pageNumber || 1}&_limit=4`);
+        let data = await res.json();
+        data = sortHotelsByPriceAsc(data);
+        renderHotel(data);
+        // console.log("ok");
+    } catch (error) {
+        console.log(error);
+    }
 });

@@ -531,7 +531,7 @@ button {
   display: flex;
 }
 
-/*-------------------------Hover Alipa body2-card --------------------------*/
+/* -------------------------Hover Alipa body2-card --------------------------/ */
 .body2__card:hover{
   transform: scale(1.08)
 }
