@@ -15,31 +15,37 @@
 </head>
 
 <body>
-
-    <!-- navbar -->
-  <div class="head2">
-    <div class="logo"><a href="index.html"> Voyawander</a></div>
-    <div class="head3">
-      <a class="heads" href="index.html">Home</a>
-      <a class="heads" href="about.html">About Us</a>
-      <a class="heads" href="hotel.html">Hotels</a>
-      <a class="heads" href="Flight.html">Flights</a>
-      <a class="heads" href="contact.html">Contact Us</a>
-      <a class="heads" href="login.html">Login</a>
-   </div>  
- </div>
+    <div class="head2">
+        <div class="logo"><a style="color: black;" href="index.html"> VoyaWander</a></div>
+        <div class="head3">
+            <a class="heads" href="index.html">Home</a>
+            <a class="heads" href="about.html">About Us</a>
+            <a class="heads" href="hotel.html">Hotels</a>
+            <a class="heads" href="Flight.html">Flights</a>
+            <a class="heads" href="contact.html">Contact Us</a>
+            <a class="heads" href="login.html">Login</a>
+        </div>
+    </div>
 
     <header class="section__container header__container">
         <div class="header__image__container">
             <div class="header__content">
                 <h1 class="enjoy">Enjoy Your Dream Vacation</h1>
-                <p>Book Hotels, Flights and stay packeages at lowest price</p>
+                <p>"Explore the world with the best deals – where every journey begins with savings and ends with unforgettable experiences."</p>
             </div>
             <div class="booking__container">
                 <form>
                     <div class="from__group">
                         <div class="input__group">
-                            <input type="text">
+                            <select class="input_class" id="locationDropdown">
+                                <option value="United States">United States</option>
+                                <option value="Japan">Japan</option>
+                                <option value="France">France</option>
+                                <option value="India">India</option>
+                                <option value="Switzerland">Switzerland</option>
+                                <option value="Italy">Italy</option>
+                                <!-- Add more options as needed -->
+                            </select>
                             <label>Location</label>
                         </div>
                         <p>Where are you going?</p>
@@ -47,29 +53,33 @@
 
                     <div class="from__group">
                         <div class="input__group">
-                            <input type="text">
-                            <label>Check In</label>
+                            <button class="input_class" id="high-to-low" type="button">
+                                 High to low Price
+                            </button>
+                            <label>Price(Highest first)</label>
                         </div>
-                        <p>Add Date</p>
+                        <p>Add Discount</p>
                     </div>
 
                     <div class="from__group">
                         <div class="input__group">
-                            <input type="text">
-                            <label>Check Out</label>
+                            <button class="input_class" id="low-to-high" type="button">
+                                Low to High Price
+                            </button>
+                            <label>Price(Lowest first)</label>
                         </div>
-                        <p>Add Date</p>
+                        <p>Add Discount</p>
                     </div>
 
                     <div class="from__group">
                         <div class="input__group">
-                            <input type="text">
+                            <input class="input_class"  type="text">
                             <label>Guests</label>
                         </div>
                         <p>Add guests</p>
                     </div>
                 </form>
-                <button class="btn"><i class="ri-search-line"></i></button>
+                <!-- <button class="btn"><i class="ri-search-line"></i></button> -->
             </div>
         </div>
     </header>
@@ -80,7 +90,9 @@
         <div class="box-package-container">
         </div>
 
-        <div class="load-more" style="margin-left:48%;"><span class="btn">Load More</span></div>
+        <div class="load-more" style="margin-left:48%;height:40px;
+        width:80px; text-align:center;font-size: 20px;"><span id="loadbutton" class="btn">></span>
+        </div>
     </section>
 
 
@@ -125,8 +137,8 @@
     <section class="section__container">
         <div class="reward__container">
             <p>100+ discount codes</p>
-            <h4>Join rewards and discover amazing discounts on your booking</h4>
-            <button class="reward__btn">Join Rewards</button>
+            <h4>"Elevate your travel experience: Join rewards for exclusive discounts on every booking."</h4>
+            <button class="reward__btn">Get Discount</button>
         </div>
     </section>
     <!---------------- Footer section -------------------->
