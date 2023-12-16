@@ -1,4 +1,4 @@
-let userUrl=`https://myfinalapi.onrender.com/users`;
+let userUrl=`https://quasarapi.onrender.com/users`;
 
 let firstNameInput=document.getElementById("firstName");
 let lastNameInput=document.getElementById("lastName");
@@ -11,7 +11,7 @@ async function fetchUserData(url){
         let res=await fetch(`${url}`);
 
         let data= await res.json();
-        // console.log(data);
+        console.log(data);
     }
     catch(error){
         console.log(error);
@@ -36,7 +36,7 @@ async function postData(url){
             },
             body:JSON.stringify(newUserData),
         })
-        const updateData=await res.json();
+        // const updateData=await res.json();
         fetchUserData(userUrl);
     }
     catch(error){
@@ -48,3 +48,4 @@ submitButton.addEventListener("click",(e)=>{
     postData(userUrl);
     alert("Login successfull");
 })
+
