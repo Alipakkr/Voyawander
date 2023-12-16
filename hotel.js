@@ -21,7 +21,7 @@ fetchHotels(travelUrl,pageNumber);
 
 //createMoreCard
 function renderHotel(data){
-    // boxPackageContainer.innerHTML="";
+    boxPackageContainer.innerHTML="";
     data.forEach(item=>{
         let totalHotel=oneHotelCard(item);
         boxPackageContainer.appendChild(totalHotel);
@@ -81,7 +81,7 @@ loadMoreBtn.innerText = ">";
 loadMoreBtn.addEventListener("click", () => {
     pageNumber++;
     moveit-=500;
-    fetchHotels(apiUrl, pageNumber);;
+    fetchHotels(travelUrl,"",pageNumber);
     boxPackageContainer.style.transform = `translate(${moveit}px)`;
     boxPackageContainer.style.transition = "transform 0.7s cubic-bezier(.22,.44,.06,1)";
 });
@@ -90,57 +90,11 @@ loadMoreBtn.addEventListener("click", () => {
 // document.querySelector('.load-more').appendChild(loadMoreBtn);
 
 
-
 //add functionality to drop down.
 
-
-
-/// Function to sort hotels by price in ascending order (low to high)
-function sortHotelsByPriceAsc(data) {
-    data.sort((a, b) => {
-        // Assuming prices are in the format "$499", converting them to numbers for comparison
-        const priceA = parseInt(a.price.replace(/\D/g, ''));
-        const priceB = parseInt(b.price.replace(/\D/g, ''));
-        return priceA - priceB;
-    });
-    return data;
-}
-
-// Function to sort hotels by price in descending order (high to low)
-function sortHotelsByPriceDesc(data) {
-    data.sort((a, b) => {
-        const priceA = parseInt(a.price.replace(/\D/g, ''));
-        const priceB = parseInt(b.price.replace(/\D/g, ''));
-        return priceB - priceA;
-    });
-    return data;
-}
-
-// Event listener for the "High to Low Price" button
+//add sort to button.
 let highToLow = document.getElementById("high-to-low");
 highToLow.addEventListener("click", async () => {
-    try {
-        pageNumber = 1; 
-        let res = await fetch(`${travelUrl}?_sort=price&_order=desc&_page=${pageNumber || 1}&_limit=4`);
-        let data = await res.json();
-        data = sortHotelsByPriceDesc(data);
-        renderHotel(data);
-    } catch (error) {
-        console.log(error);
-    }
-});
-
-// Event listener for the "Low to High Price" button
-let lowToHigh = document.getElementById("low-to-high");
-lowToHigh.addEventListener("click", async () => {
-    try {
-        pageNumber = 1;
-        let res = await fetch(`${travelUrl}?_sort=price&_order=asc&_page=${pageNumber || 1}&_limit=4`);
-        let data = await res.json();
-        data = sortHotelsByPriceAsc(data);
-        renderHotel(data);
-        // console.log("ok");
-    } catch (error) {
-        console.log(error);
-    }
+    fetchHotels(travelUrl, "_sort=price&_order=desc&");
+  
 });
