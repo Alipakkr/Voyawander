@@ -1,8 +1,9 @@
 *{
     padding: 0;
     margin: 0;
-   
+  
   }
+
   .head2 {
     background: #e3f5ff;
     display: flex;
@@ -45,8 +46,7 @@
     text-align: right;
     margin-right: 20px;
   }
-  
-  
+
   .row {
       display: -ms-flexbox; /* IE10 */
       display: flex;
@@ -176,4 +176,7 @@
     margin-top: 170px;
     width: 50%;
   }
+
+ 
   
+
