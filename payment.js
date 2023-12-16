@@ -1,5 +1,4 @@
 let cartData = JSON.parse(localStorage.getItem("cart-data"));
-
 let total=document.getElementById("total");
 let totalPrice=localStorage.getItem("totalPrice");
 total.innerText=` ₹ ${totalPrice}`
