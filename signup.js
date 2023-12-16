@@ -14,4 +14,3 @@ document.querySelector("form").addEventListener("submit",()=>{
 
     window.location.href = "login.html"
 })
-
