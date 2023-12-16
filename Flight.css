@@ -14,10 +14,11 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+ 
 }
 
 .head2 {
-
+  background-color: #ddf3ff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -39,20 +40,17 @@
   color: rgb(83, 200, 246);
 }
 
-.head2 .logo {
-  color: linear-gradient(to right,
-      rgba(3, 170, 254, 0.923),
-      rgb(0, 222, 255));
+.head2 .logo a {
+  color: linear-gradient(to right, rgba(3, 170, 254, 0.923), rgb(0, 222, 255));
   font-weight: bold;
   font-size: 1.5em;
   text-decoration: none;
   margin-left: 23px;
   padding-left: 50px;
+  color: black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-.head2 .logo a { 
-  text-decoration: none;
-}
-
 .head2 .head3 {
   width: 60%;
   color: white;
@@ -143,9 +141,7 @@ body {
 }
 
 .booking__nav span:nth-child(2) {
-  /* color: var(--white); */
-  /*
-   background-color: var(--primary-color); */
+   background-color: var(--primary-color); 
 }
 
 .booking__nav span:hover {
@@ -394,10 +390,6 @@ body {
   color: var(--text-light);
   line-height: 1.75rem;
 }
-
-
-
-
 
 .travellers__grid {
   margin-top: 4rem;
