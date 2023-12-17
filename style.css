@@ -188,7 +188,7 @@ button {
 }
 
 .body2 p {
-  font-size: large;
+  font-size: 20px;
   width: 70%;
   margin: auto;
   letter-spacing: 1px;
@@ -293,6 +293,7 @@ button {
   justify-content: space-between;
 }
 .mainsection3 h1 {
+  padding-top: 30px;
   font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 20px;
   justify-content: space-between;
@@ -301,9 +302,10 @@ button {
 .mainsection3 p {
   font-family: Arial, Helvetica, sans-serif;
   justify-content: space-between;
-  font-size: 25px;
+  font-size: 20px;
 }
 #worldMap {
+  padding-top: 30px;
   max-width: 100%;
   height: auto;
   margin-top: 40px;
@@ -313,10 +315,13 @@ button {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  padding-top: 30px;
   margin-top: 20px;
+  padding-bottom: 30px;
 }
 .card {
-  /* width: 400px; */
+  
+  width: 400px;
   border: 1px solid #ccc;
   border-radius: 30px;
   margin: 10px;
@@ -346,7 +351,7 @@ button {
   width: 100%;
   height: 250px;
   object-fit: cover;
-  border-radius: 30px;
+  /* border-radius: 30px; */
 }
 .btn {
   background-image: linear-gradient(90deg, #00adfd 0, #00c6fe 51%, #00e3fe);
@@ -382,8 +387,8 @@ button {
   text-align: center;
   justify-content: center;
 }
-
 #explore {
+  padding-top: 30px;
   background-image: linear-gradient(90deg, #00adfd 0, #00c6fe 51%, #00e3fe);
   border-radius: 10px;
   justify-content: center;
@@ -393,11 +398,10 @@ button {
   border: none;
  
 }
-#explore:hover{
-  transform: scale(1.05);
-}
+
 /* --------------KUNDAN   section5---------------- */
 .MountainSection {
+  padding-top: 40px;
   width: 100%;
   height: 450px;
   margin-top: 15px;
@@ -535,7 +539,7 @@ button {
   display: flex;
 }
 
-/* -------------------------Hover Alipa body2-card --------------------------/ */
+/*-------------------------Hover Alipa body2-card --------------------------*/
 .body2__card:hover{
   transform: scale(1.08)
 }
