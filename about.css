@@ -137,6 +137,37 @@ body{
   width: 50%;
 }
 
+/* Media query for screens with a width between 100px and 1150px */
+@media screen and (min-width: 100px) and (max-width: 1150px) {
+  /* Adjust styles for smaller screens */
+  .head3 {
+    flex-direction: column;
+    text-align: center; /* Center-align the navigation links */
+  }
+
+  /* Adjust other styles as needed for smaller screens */
+  .About {
+    margin: 5%; 
+  }
+
+  .About .Details,
+  .About .image {
+    width: 100%; 
+    height: 500px;
+    float: none; 
+     margin: 0; 
+    padding: 10px; 
+  }
+
+  .image img {
+    width: 100%;
+    margin-left: 0; 
+    margin-top: 0; 
+  }
+
+  }
+
+
 /* responsiveness of footer section */
 
 @media screen and (min-width: 100px) and (max-width: 1150px) {
@@ -162,3 +193,4 @@ body{
     justify-content: start;
   }
 }
+
