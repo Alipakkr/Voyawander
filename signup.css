@@ -49,11 +49,12 @@
     text-align: right;
     margin-right: 20px;
 }
-
+ /* ----------------sign form---------- */
 #signup-form {
     width: 500px;
     margin: auto;
     text-align: center;
+    padding-top: 30px;
 }
 
 #signup-form-heading {
@@ -61,6 +62,7 @@
     font-size: 30px;
     color: black;
     margin: auto;
+   
 }
 
 form {
@@ -73,7 +75,7 @@ form {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 #links>div {
@@ -82,7 +84,7 @@ form {
     height: 50px;
     border-radius: 30px;
     justify-content: space-between;
-    padding: 10px 15px 10px 0px;
+    padding: 10px 12px 10px 2px;
     align-items: center;
     margin: 10px;
     color: white;
@@ -94,7 +96,7 @@ form {
 
 #links>div:nth-child(1) img {
     width: 50px;
-    height: 50px;
+    height: 45px;
     border-radius: 30px;
 }
 
@@ -111,7 +113,7 @@ form {
     width: 65px;
     height: 42px;
     border-radius: 30px;
-    padding: 12px 20px;
+    padding: 10px 20px;
     background-color: white;
     margin-left: 1px;
 }
@@ -126,6 +128,11 @@ form {
     border-radius: 30px;
     padding-left: 10px;
 }
+
+#links a {
+    color: white;
+    text-decoration: none;
+ }
 
 #form-text {
     display: flex;
