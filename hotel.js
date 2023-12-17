@@ -8,7 +8,7 @@ let pageNumber=1;
 //fetchData
 async function fetchHotels(travelUrl,condition,pageNumber){
     try{
-        let res=await fetch(`${travelUrl}?${condition || ""}_page=${pageNumber || 1}&_limit=4`);
+        let res=await fetch(`${travelUrl}?${condition || ""}_page=${pageNumber || 1}`);
         let data=await res.json();
          renderHotel(data);
     }
@@ -97,6 +97,15 @@ loadMoreBtn.addEventListener("click", () => {
 //add sort to button.
 let highToLow = document.getElementById("high-to-low");
 highToLow.addEventListener("click", (e)=> {
-    fetchHotels(travelUrl, "_sort=price&_order=desc&");
+    boxPackageContainer.innerHTML = "";
+    fetchHotels(apiUrl, "_sort=price&_order=desc&",pageNumber);
+  
+});
+
+//add sort to button.
+let lowToHigh = document.getElementById("low-to-high");
+lowToHigh.addEventListener("click", (e)=> {
+    boxPackageContainer.innerHTML = "";
+    fetchHotels(apiUrl, "_sort=price&_order=asc&",pageNumber);
   
 });
