@@ -185,7 +185,7 @@ input {
     border-radius: 30px;
     border: 0px;
     margin-top: 50px;
-    background-color: #3C07FF;
+    background-image: linear-gradient(90deg, #00adfd 0, #00c6fe 51%, #00e3fe);
     color: white;
     font-size: 20px;
     letter-spacing: 2px;
