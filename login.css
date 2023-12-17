@@ -2,16 +2,26 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-   
-  }
-  
+
+}
+
+
+/* --------------ALIPA---------------- */
+.header1 {
+    color: black;
+    padding: 5px;
+    font-size: 15px;
+    text-align: center;
+    background: #00a3ff;
+    color: white;
+}
 
 .head2 {
     background: #e3f5ff;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding: 5px 0; */
+    padding: 5px 0;
     /* margin-bottom: 1.5rem; */
     /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
 }
@@ -38,8 +48,8 @@
     padding-left: 50px;
     color: black;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  }
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
 
 .head2 .head3 {
     width: 60%;
@@ -47,6 +57,10 @@
     padding: 18px 0px;
     text-align: right;
     margin-right: 20px;
+}
+
+.head2 span {
+    display: none;
 }
 
 #login-form {
@@ -62,6 +76,7 @@
     color: black;
     padding-top: 40px;
 }
+
 form {
     margin-top: 20px;
     width: 100%;
@@ -113,8 +128,8 @@ form {
     padding: 10px 20px;
     background-color: white;
     margin-left: 1px;
-   
-    
+
+
 }
 
 #links>div:nth-child(3) {
@@ -127,10 +142,11 @@ form {
     border-radius: 30px;
     padding-left: 10px;
 }
- #links a {
+
+#links a {
     color: white;
     text-decoration: none;
- }
+}
 
 
 #form-text {
@@ -256,25 +272,62 @@ input {
 /* responsiveness of footer section */
 
 @media screen and (min-width: 100px) and (max-width: 1150px) {
-    .logo a{
-      margin-left: -40%;
+    .logo a {
+        margin-left: -40%;
     }
-    .footer{
-      height: auto;
+
+    .footer {
+        height: auto;
     }
-    .footermain{
-      display: flex;
-      height: fit-content;
-      flex-direction: column;
+
+    .footermain {
+        display: flex;
+        height: fit-content;
+        flex-direction: column;
     }
-    .contensection{
-      margin-top: 80px;
-      width: 100%;
+
+    .contensection {
+        margin-top: 80px;
+        width: 100%;
     }
-    .iconsection{
-      width: 100%;
-      margin-top: 50px;
-      margin-bottom: 20px;
-      justify-content: start;
+
+    .iconsection {
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        justify-content: start;
     }
-  }
+}
+/* responsive  */
+/* Media query for screens between 100px and 1150px */
+@media screen and (min-width: 100px) and (max-width: 1150px) {
+    .header1 {
+      font-size: 12px;
+      padding: 3px;
+  
+    }
+  
+    .head2 {
+      padding: 3px 0;
+  
+    }
+  
+    .head2 .head3 .heads {
+      padding: 15px;
+      font-size: 16px;
+      display: none;
+    }
+  
+    .head2 .logo a {
+      font-size: 1.2em;
+      margin-left: 10px;
+      padding-left: 30px;
+    }
+  .head2 span {
+      display: block;
+      margin-top: 24px;
+      margin-right: 26px;
+      /* background:black; */
+  
+    }
+}

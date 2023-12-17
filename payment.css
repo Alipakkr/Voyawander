@@ -3,59 +3,76 @@
 body {
     margin: 0;
     padding: 0;
-  }
+}
 
-  .head2 {
+/* --------------ALIPA---------------- */
+.header1 {
+    color: black;
+    padding: 5px;
+    font-size: 15px;
+    text-align: center;
+    background: #00a3ff;
+    color: white;
+}
+
+.head2 {
+    background: #e3f5ff;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ddf3ff;
-    /* padding: 5px 0; */
+    padding: 5px 0;
     /* margin-bottom: 1.5rem; */
     /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
-  }
-  
-  .head2 .head3 .heads {
+}
+
+.head2 .head3 .heads {
     text-decoration: none;
     color: black;
     font-family: "Poppins", sans-serif;
     padding: 22px;
     transition: color 0.3s;
     font-size: 18px;
-  }
-  
-  .head2 .head3 .heads:hover {
+}
+
+.head2 .head3 .heads:hover {
     color: rgb(83, 200, 246);
-  }
-  
-  .head2 .logo {
-    
-    color: linear-gradient(to right,
-        rgba(3, 170, 254, 0.923),
-        rgb(0, 222, 255));
+}
+
+.head2 .logo a {
+    color: linear-gradient(to right, rgba(3, 170, 254, 0.923), rgb(0, 222, 255));
     font-weight: bold;
     font-size: 1.5em;
     text-decoration: none;
     margin-left: 23px;
     padding-left: 50px;
-  }
-  
-  .head2 .head3 {
+    color: black;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.head2 .head3 {
     width: 60%;
     color: white;
     padding: 18px 0px;
     text-align: right;
     margin-right: 20px;
-  }
-.payment-method{
+}
+
+.head2 span {
+    display: none;
+}
+
+.payment-method {
     padding-left: 240px;
-   
+
 
 }
+
 .method-heading {
     text-align: center;
     padding-left: 250px;
 }
+
 .paymentData {
     /* border: 1px solid red; */
     display: flex;
@@ -83,7 +100,7 @@ body {
 
 .payment-list ul li button {
     text-decoration: none;
-    border:none;
+    border: none;
     padding: 10px;
     color: rgb(2, 2, 2);
     /* line-height: 60px; */
@@ -157,8 +174,8 @@ body {
     height: 9%;
     border-radius: 15px;
     color: white;
-   background-image: linear-gradient(90deg, #00adfd 0, #00c6fe 51%, #00e3fe)
-    /* transition: .2s linear; */
+    background-image: linear-gradient(90deg, #00adfd 0, #00c6fe 51%, #00e3fe)
+        /* transition: .2s linear; */
 }
 
 #securely-payment a {
@@ -198,7 +215,7 @@ body {
 }
 
 
-#secure-payment{
+#secure-payment {
     text-align: center;
     margin-top: 50px;
     padding: 3px 12px;
@@ -206,7 +223,7 @@ body {
     height: 9%;
     border-radius: 15px;
     color: white;
-   background-image: linear-gradient(90deg, #00adfd 0, #00c6fe 51%, #00e3fe)
+    background-image: linear-gradient(90deg, #00adfd 0, #00c6fe 51%, #00e3fe)
 }
 
 #securely-payment button:a {
@@ -270,7 +287,7 @@ body {
     width: 50px;
     border: none;
     background-color: rgb(243, 213, 82);
-  
+
 
 }
 
@@ -406,100 +423,107 @@ body {
 .gray {
     color: rgb(110, 110, 110);
 }
+
 /* ----------------Footer styling----------------- */
 .footer {
     height: 300px;
     width: 100%;
     gap: 100px;
     background-color: #ddf3ff;
-  }
-  
-  .footermain {
+}
+
+.footermain {
     display: flex;
     width: 90%;
     gap: 20%;
     margin: 60px auto auto auto;
-  }
-  
-  .imageicon {
+}
+
+.imageicon {
     width: fit-content;
     height: 40px;
-  }
-  
-  .imageiconf {
+}
+
+.imageiconf {
     height: 38px;
-  }
-  
-  .contensection {
+}
+
+.contensection {
     margin-top: 110px;
     width: 50%;
-  }
-  
-  .iconsection {
+}
+
+.iconsection {
     display: flex;
     gap: 10px;
     justify-content: end;
     align-items: baseline;
     margin-top: 170px;
     width: 50%;
-  }
+}
 
-  /* responsiveness of footer section */
+/* responsiveness of footer section */
 
-  @media screen and (min-width: 100px) and (max-width: 1150px) {
-    .logo a{
-      margin-left: -40%;
-    }
-    .footer{
-      height: auto;
-    }
-    .footermain{
-      display: flex;
-      height: fit-content;
-      flex-direction: column;
-    }
-    .contensection{
-      margin-top: 80px;
-      width: 100%;
-    }
-    .iconsection{
-      width: 100%;
-      margin-top: 50px;
-      margin-bottom: 20px;
-      justify-content: start;
-    }
-  }
-  /* * Media query for screens between 100px and 1150px 
 @media screen and (min-width: 100px) and (max-width: 1150px) {
-    .head2 {
-        padding: 3px 0;
+    .logo a {
+        margin-left: -40%;
     }
 
-    .head2 .head3 .heads {
-        padding: 15px;
-        font-size: 16px;
-    }
-
-    .head2 .logo {
-        font-size: 1.2em;
-        margin-left: 10px;
-        padding-left: 30px;
+    .footer {
+        height: auto;
     }
 
     .footermain {
+        display: flex;
+        height: fit-content;
         flex-direction: column;
-        gap: 20px;
-        margin: 30px auto;
     }
 
     .contensection {
+        margin-top: 80px;
         width: 100%;
     }
 
     .iconsection {
         width: 100%;
+        margin-top: 50px;
+        margin-bottom: 20px;
         justify-content: start;
-        margin-top: 20px;
-        margin-bottom: 10px;
     }
-} */
+}
+
+
+    
+/* responsive  */
+/* Media query for screens between 100px and 1150px */
+@media screen and (min-width: 100px) and (max-width: 1150px) {
+    .header1 {
+      font-size: 12px;
+      padding: 3px;
+  
+    }
+  
+    .head2 {
+      padding: 3px 0;
+  
+    }
+  
+    .head2 .head3 .heads {
+      padding: 15px;
+      font-size: 16px;
+      display: none;
+    }
+  
+    .head2 .logo a {
+      font-size: 1.2em;
+      margin-left: 10px;
+      padding-left: 30px;
+    }
+  .head2 span {
+      display: block;
+      margin-top: 24px;
+      margin-right: 26px;
+      /* background:black; */
+  
+    }
+}

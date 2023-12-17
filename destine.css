@@ -5,15 +5,22 @@
 
 }
 
-/* navbar */
+/* --------------ALIPA---------------- */
+.header1 {
+  color: black;
+  padding: 5px;
+  font-size: 15px;
+  text-align: center;
+  background: #00a3ff;
+  color: white;
+}
+
 .head2 {
-  padding: 15px;
+  background: #e3f5ff;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ddf3ff;
-  width: 100%;
-  /* padding: 5px 0; */
+  padding: 5px 0;
   /* margin-bottom: 1.5rem; */
   /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
 }
@@ -49,6 +56,10 @@
   padding: 18px 0px;
   text-align: right;
   margin-right: 20px;
+}
+
+.head2 span {
+  display: none;
 }
 
 body {
@@ -153,25 +164,62 @@ body {
 /* responsiveness of footer section */
 
 @media screen and (min-width: 100px) and (max-width: 1150px) {
-  .logo a{
+  .logo a {
     margin-left: -40%;
   }
-  .footer{
+
+  .footer {
     height: auto;
   }
-  .footermain{
+
+  .footermain {
     display: flex;
     height: fit-content;
     flex-direction: column;
   }
-  .contensection{
+
+  .contensection {
     margin-top: 80px;
     width: 100%;
   }
-  .iconsection{
+
+  .iconsection {
     width: 100%;
     margin-top: 50px;
     margin-bottom: 20px;
     justify-content: start;
+  }
+}
+/* responsive  */
+/* Media query for screens between 100px and 1150px */
+@media screen and (min-width: 100px) and (max-width: 1150px) {
+  .header1 {
+    font-size: 12px;
+    padding: 3px;
+
+  }
+
+  .head2 {
+    padding: 3px 0;
+
+  }
+
+  .head2 .head3 .heads {
+    padding: 15px;
+    font-size: 16px;
+    display: none;
+  }
+
+  .head2 .logo a {
+    font-size: 1.2em;
+    margin-left: 10px;
+    padding-left: 30px;
+  }
+.head2 span {
+    display: block;
+    margin-top: 24px;
+    margin-right: 26px;
+    /* background:black; */
+
   }
 }
