@@ -21,4 +21,5 @@ This project is built using the following technologies:
 
 - HTML (Hyper Text Markup Language)
 - CSS (Cascade Styling Sheet)
+- Js (JavaScript)
 
