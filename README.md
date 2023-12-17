@@ -43,13 +43,16 @@ This project is built using the following technologies:
 
 ## Hotel Booking :-
 
-<img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/image/hotel.jpg">
 - Browse popular hotels and view their details.
 - Search for hotels based on location and sort them by price.
 - Read client reviews and testimonials.
 - Explore flight options for your dream vacation.
 - Contact the Voyawander team for inquiries.
 - User authentication and login functionality.
+
+  
+<img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/image/hotel.jpg">
+
 
 ## Flight Booking :-
 
