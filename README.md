@@ -15,7 +15,10 @@ Welcome to the Voyawander  Travelling Website project! This open-source project 
 
 This project is built using the following technologies:
 
-- HTML (Hyper Text Markup Language)
-- CSS (Cascade Styling Sheet)
-- Js (JavaScript)
+<div Style="display:flex;">
+   <img style="width:5%;height:5%;"src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/javascript.png">
+   <img style="width:5%;height:5%;"src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/html.png">
+    <img style="width:5%;height:5%;"src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/css.png">
+    <img style="width:5%;height:5%;"src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/git.png">
+</div>
 
