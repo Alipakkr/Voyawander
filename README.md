@@ -27,6 +27,7 @@ This project is built using the following technologies:
 
 ## Footer :-
 <img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/image/footer.png">
+
 ## Collaborators :-
 
   - Alipa (Team Lead)
