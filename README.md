@@ -15,9 +15,9 @@ This project is built using the following technologies:
 
 ## Installation :-
 
-- Clone the repository: git clone <a href="https://github.com/Alipakkr/Project-quasar-7896.git">
+- Clone the repository: git clone <a href="https://github.com/Alipakkr/Project-quasar-7896.git">https://github.com/Alipakkr/Project-quasar-7896.git</a>
 - Navigate to the project directory: cd Project-quasar-7896
-- Open the <a href="index.html"> file in your preferred web browser.
+- Open the <a href="index.html">index.html</a> file in your preferred web browser.
 
 ## Home Page :-
 <img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/image/admin1.png">
