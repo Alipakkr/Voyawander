@@ -43,10 +43,25 @@ This project is built using the following technologies:
 
 ## Hotel Booking :-
 
-<img src="
+<img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/image/hotel.jpg">
+- Browse popular hotels and view their details.
+- Search for hotels based on location and sort them by price.
+- Read client reviews and testimonials.
+- Explore flight options for your dream vacation.
+- Contact the Voyawander team for inquiries.
+- User authentication and login functionality.
+
 ## Flight Booking :-
 
+## Destinations :-
 
+<img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/image/dest1.png">
+<img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/image/dest2.png">
+
+- Explore the destination cards.
+- Each card provides information about the duration of the trip and starting prices.
+- Click on the "Book" button to initiate the booking process.
+- Follow the steps on the payment page to confirm your reservation.
 
 ## Footer :-
 <img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/image/footer.png">
