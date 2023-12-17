@@ -14,7 +14,7 @@ Welcome to the Voyawander  Travelling Website project! This open-source project 
 ## Tech Stacks Used
 
 This project is built using the following technologies:
-<div style="display:flex; width:50px; height:50px">
+<div style="display:flex; width:10px; height:10px">
 <img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/javascript.png">
 <img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/html.png">
 <img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/git.png">
