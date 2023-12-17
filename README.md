@@ -10,10 +10,6 @@ Welcome to the Voyawander  Travelling Website project! This open-source project 
    <li>Kundan kumar Suraj</li>
    <li>Anshu kumari</li>
 </ol>
-<h3>Tech Stack :-</h3>
-<ul>
-<li>HTML</li>
-</ul>
 
 ## Tech Stacks Used
 
