@@ -18,6 +18,7 @@ This project is built using the following technologies:
 <img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/image/admin2.png">
 <img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/image/admin3.png">
 <img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/image/admin4.png">
+<img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/image/admin5.jpg">
 
 ## login Page :-
 
