@@ -563,3 +563,31 @@ body {
   margin-top: 170px;
   width: 50%;
 }
+
+
+
+  /* responsiveness of footer section */
+
+  @media screen and (min-width: 100px) and (max-width: 1150px) {
+    .logo a{
+      margin-left: -40%;
+    }
+    .footer{
+      height: auto;
+    }
+    .footermain{
+      display: flex;
+      height: fit-content;
+      flex-direction: column;
+    }
+    .contensection{
+      margin-top: 80px;
+      width: 100%;
+    }
+    .iconsection{
+      width: 100%;
+      margin-top: 50px;
+      margin-bottom: 20px;
+      justify-content: start;
+    }
+  }
