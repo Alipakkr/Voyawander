@@ -20,6 +20,12 @@ This project is built using the following technologies:
 - Open the <a href="index.html">index.html</a> file in your preferred web browser.
 
 ## Home Page :-
+
+- Visit the Voyawander Website.
+- Explore the homepage for exciting travel information.
+- Navigate to specific sections like Hotels, Flights, and Community.
+- Book your next adventure and enjoy exclusive offers.
+- 
 <img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/image/admin1.png">
 <img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/image/admin2.png">
 <img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/image/admin3.png">
