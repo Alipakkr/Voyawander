@@ -17,7 +17,6 @@
 
 }
 
-/* --------------ALIPA---------------- */
 .header1 {
   color: black;
   padding: 5px;
@@ -74,6 +73,43 @@
   display: none;
 }
 
+/* slider part start here */
+#slider {
+  width: 100%;
+  margin: auto;
+  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+  margin-top: 10px;
+  /* height: 440px; */
+  /* border: 1px s/olid; */
+}
+
+.swiper {
+  width: 100%;
+  height: fit-content;
+}
+
+.swiper-slide>img {
+  width: 100%;
+  /* height: 70vh; */
+  height: 20%;
+}
+
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+  color: rgb(251, 250, 250);
+  /* border: 1px solid; */
+  border-radius: 50%;
+  padding: 8px;
+  width: 3%;
+  background-color: rgb(233, 221, 221);
+
+}
+
+.swiper .swiper-pagination-bullet-active {
+  background-color: white;
+}
+
+/* slider part end her */
 
 /* Body */
 .section__container {
@@ -471,8 +507,9 @@ body {
   }
 
   .header__container img {
-    min-width: 900px;
+    min-width: 100%;
     margin-left: 50%;
+    
     transform: translateX(-50%);
   }
 
@@ -580,36 +617,6 @@ body {
 }
 
 
-
-/* responsiveness of footer section */
-
-@media screen and (min-width: 100px) and (max-width: 1150px) {
-  .logo a {
-    margin-left: -40%;
-  }
-
-  .footer {
-    height: auto;
-  }
-
-  .footermain {
-    display: flex;
-    height: fit-content;
-    flex-direction: column;
-  }
-
-  .contensection {
-    margin-top: 80px;
-    width: 100%;
-  }
-
-  .iconsection {
-    width: 100%;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    justify-content: start;
-  }
-}
 /* responsive  */
 /* Media query for screens between 100px and 1150px */
 @media screen and (min-width: 100px) and (max-width: 1150px) {
@@ -635,7 +642,29 @@ body {
     margin-left: 10px;
     padding-left: 30px;
   }
-.head2 span {
+
+  .headertext{
+    margin: auto auto auto -60%;
+    width: 100%;
+  }
+  .body1 .headertext h1 {
+    margin-top: 200px;
+    font-size: 2.5rem;
+  }
+
+  .body1 .headertext p {
+    font-size: 14px;
+    line-height: 25px;
+    padding-right: 20px;
+  }
+
+  .body1 .headertext button {
+    font-size: 0.8rem;
+    padding: 8px 12px;
+    margin-top: 10px;
+  }
+
+  .head2 span {
     display: block;
     margin-top: 24px;
     margin-right: 26px;
