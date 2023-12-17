@@ -348,7 +348,7 @@ button {
   object-fit: cover;
   border-radius: 30px;
 }
-#btn {
+.btn {
   background-image: linear-gradient(90deg, #00adfd 0, #00c6fe 51%, #00e3fe);
   border-radius: 40px;
   color: #fff;
