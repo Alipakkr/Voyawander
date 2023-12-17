@@ -56,13 +56,15 @@ This project is built using the following technologies:
 
 ## Flight Booking :-
 
-<img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/image/flight.png">
-<img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/image/flight2.png">
-
 -  Easily plan your trip with the booking form, specifying details like departure, return dates, and the number of travelers.
 -  Access helpful information about travel requirements, multi-risk travel insurance, and destination-specific travel requirements.
 -  Discover features like "Book & Relax," "Smart Checklist," and ways to save more on your travel experiences.
 -  Get inspired by the best travelers of the month, showcasing their experiences in different destinations.
+
+<img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/image/flight.png">
+<img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/image/flight2.png">
+
+
 
 ## Destinations :-
 
