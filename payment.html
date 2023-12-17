@@ -3,119 +3,84 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment</title>
-    <link rel="stylesheet" href="payment.css">
-    <script src="https://kit.fontawesome.com/8609a682e1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="./payment.css">
+    <title>Payment page</title>
 </head>
 
 <body>
-    <!-- navbar -->
-    <div class="head2">
-        <div class="logo"><a href="index.html"> Voyawander</a></div>
-        <div class="head3">
-            <a class="heads" href="index.html">Home</a>
-            <a class="heads" href="about.html">About Us</a>
-            <a class="heads" href="hotel.html">Hotels</a>
-            <a class="heads" href="Flight.html">Flights</a>
-            <a class="heads" href="contact.html">Contact Us</a>
-            <a class="heads" href="login.html">Login</a>
-        </div>
+  <div class="head2">
+    <div class="logo"><a style="text-decoration: none; color: black;" href="index.html"> VoyaWander</a></div>
+    <div class="head3">
+        <a class="heads" href="index.html">Home</a>
+        <a class="heads" href="about.html">About Us</a>
+        <a class="heads" href="hotel.html">Hotels</a>
+        <a class="heads" href="Flight.html">Flights</a>
+        <a class="heads" href="contact.html">Contact Us</a>
+        <a class="heads" href="login.html">Login</a>
     </div>
-    <!-- Payment form -->
-    <div class="col-75">
-        <div class="container">
-            <form>
-                <h2 style="text-align: center;">Your Total Price:<span id="total"></span></h2>
-                <br>
-                <br>
-                <div class="row">
-                    <div class="col-50">
-                        <h3>Billing Address</h3>
-                        <label for="fname"><i class="fa fa-user"></i> Full Name</label>
-                        <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
-                        <label for="email"><i class="fa fa-envelope"></i> Email</label>
-                        <input type="text" id="email" name="email" placeholder="john@example.com">
-                        <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
-                        <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
-                        <label for="city"><i class="fa fa-institution"></i> City</label>
-                        <input type="text" id="city" name="city" placeholder="New York">
-
-                        <div class="row">
-                            <div class="col-50">
-                                <label for="state">State</label>
-                                <input type="text" id="state" name="state" placeholder="NY">
-                            </div>
-                            <div class="col-50">
-                                <label for="zip">Zip</label>
-                                <input type="text" id="zip" name="zip" placeholder="10001">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-50">
-                        <h3>Payment</h3>
-                        <label for="fname">Accepted Cards</label>
-                        <div class="icon-container">
-                            <i class="fa fa-cc-visa" style="color:navy;"></i>
-                            <i class="fa fa-cc-amex" style="color:blue;"></i>
-                            <i class="fa fa-cc-mastercard" style="color:red;"></i>
-                            <i class="fa fa-cc-discover" style="color:orange;"></i>
-                        </div>
-                        <label for="cname">Name on Card</label>
-                        <input type="text" id="cname" name="cardname" placeholder="John More Doe">
-                        <label for="ccnum">Credit card number</label>
-                        <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
-                        <label for="expmonth">Exp Month</label>
-                        <input type="text" id="expmonth" name="expmonth" placeholder="September">
-
-                        <div class="row">
-                            <div class="col-50">
-                                <label for="expyear">Exp Year</label>
-                                <input type="text" id="expyear" name="expyear" placeholder="2018">
-                            </div>
-                            <div class="col-50">
-                                <label for="cvv">CVV</label>
-                                <input type="text" id="cvv" name="cvv" placeholder="352">
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <label>
-                    <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
-                </label>
-                <input type="submit" value="Continue to checkout" id="check" class="btn">
-            </form>
-        </div>
-    </div>
-    <!---------------- Footer section -------------------->
-    <div class="footer">
-        <div class="footermain">
-            <div class="contensection">
-                <h1>Voyagers</h1>
-                <p style="margin-top: 10px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
-                    animi
-                    possimus, quos error nostrum
-                    officiis blanditiis, sequi recusandae repellendus suscipit aspernatur. Perspiciatis officiis debitis
-                    similique.</p>
+</div>
+    <!-- Payment Method conatainer  start here -->
+    <div class="payment-method">
+        <div class="payment-new-method">
+            <div class="method-heading">
+                <h2>Payment Method</h2>
             </div>
-            <div class="iconsection">
-                <div>
-                    <a href="https://www.instagram.com/"><img class="imageicon" src="insta.png" alt="icon"></a>
+            <div class="paymentData">
+                <div class="payment-list">
+                    <ul>
+                        <li><button id="UPI">Pay Using UPI</button></li>
+                        <li><button id="Debit-Card">Debit Card</button></li>
+                        <li><button id="credit">Credit Card</button></li>
+                        <li><button id="simpl">Simpl</button></li>
+                        <li><button id="wallets">Wallets</button></li>
+                        <li><button id="internet">Internt Banking</button></li>
+                        <li><button>EMI or Pay Later</button> </li>
+                        <li>
+                            <button id="cashOn">Cash On delivery</button>
+                        </li>
+                    </ul>
                 </div>
-                <div>
-                    <a href="https://www.linkedin.com/checkpoint/lg/sign-in-another-account"><img class="imageicon"
-                            src="linkedin.png" alt="icon"></a>
-                </div>
-                <div>
-                    <a href="https://www.facebook.com/"><img class="imageiconf" src="facebook.png" alt="icon"></a>
+                <div id="payment-method-card">
                 </div>
             </div>
         </div>
-
     </div>
+     <!-- Payment Method conatainer  end here -->
+    
+     <!---------------- Footer section -------------------->
+  <div class="footer">
+    <div class="footermain">
+      <div class="contensection">
+        <h1>Voyagers</h1>
+        <p style="margin-top: 10px">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Reprehenderit animi possimus, quos error nostrum officiis
+          blanditiis, sequi recusandae repellendus suscipit aspernatur.
+          Perspiciatis officiis debitis similique.
+        </p>
+      </div>
+      <div class="iconsection">
+        <div>
+          <a href="https://www.instagram.com/"><img class="imageicon" src="insta.png" alt="icon" /></a>
+        </div>
+        <div>
+          <a href="https://www.linkedin.com/checkpoint/lg/sign-in-another-account"><img class="imageicon"
+              src="linkedin.png" alt="icon" /></a>
+        </div>
+        <div>
+          <a href="https://www.facebook.com/"><img class="imageiconf" src="facebook.png" alt="icon" /></a>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
-<script src="payment.js"></script>
+<script src="./payment.js"></script>
 
 </html>
