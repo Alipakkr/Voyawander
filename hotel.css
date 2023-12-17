@@ -19,6 +19,90 @@
   
 
 /* added css */
+/* ... (your existing styles) */
+
+/* Media query for smaller screens */
+/* ... (your existing styles) */
+
+/* Media query for smaller screens */
+/* ... (your existing styles) */
+
+/* Media query for smaller screens */
+/* ... (your existing styles) */
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    /* ... (your existing styles) */
+  
+    .booking__container {
+      width: 90%;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .booking__container__from {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  
+    .booking__container .from__group {
+      margin-bottom: 20px;
+    }
+  
+    .input_class {
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+  
+    .booking__container__input {
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+  
+    .booking__container .btn {
+      width: 100%;
+    }
+  
+    .box-package-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      overflow-x: hidden;
+    }
+  
+    .box-package {
+      width: 80%;
+      margin: 15px;
+    }
+  
+    .box-package:nth-child(n+5) {
+      display: none;
+    }
+  
+    .load-more {
+      display: block;
+      margin: 20px auto;
+    }
+  
+    .client__grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  
+    .client__class {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  
+    .reward__container {
+      padding: 1rem;
+    }
+  
+    .reward__container h4 {
+      max-width: 100%;
+    }
+  }
+  
 /* added css */
 
 .head2 {
