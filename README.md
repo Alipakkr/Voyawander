@@ -76,7 +76,9 @@ This project is built using the following technologies:
 <img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/image/dest1.png">
 <img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/image/dest2.png">
 
+## Payment Page :-
 
+<img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/image/payment.png">
 
 ## Footer :-
 <img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/image/footer.png">
