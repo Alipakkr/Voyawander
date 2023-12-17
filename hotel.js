@@ -1,102 +1,168 @@
-let boxPackageContainer=document.getElementsByClassName("box-package-container")[0];
-const apiUrl='https://quasarapi.onrender.com/destinations';
-const travelUrl=`${apiUrl}`
+// Select the container where hotel data will be rendered
+const boxPackageContainer = document.querySelector(".box-package-container");
+const apiUrl = "https://quasarapi.onrender.com/destinations";
+let mainData = [];
+let debounceTimer;
 
 
-let pageNumber=1;
-
-//fetchData
-async function fetchHotels(travelUrl,condition,pageNumber){
-    try{
-        let res=await fetch(`${travelUrl}?${condition || ""}_page=${pageNumber || 1}&_limit=4`);
-        let data=await res.json();
-         renderHotel(data);
+// Function to fetch hotels
+async function fetchHotels(query,cond,page) {
+  try {
+    const response = await fetch(`https://quasarapi.onrender.com/destinations?Country=${query ||""}${cond || ""}_page=${page}`);
+    if (!response.ok) {
+      throw new Error("Failed to fetch hotels");
     }
-    catch(error){
-        console.log(error);
-    }
+    return await response.json();
+  } catch (error) {
+    console.error("Error fetching hotels:", error);
+    return [];
+  }
 }
-fetchHotels(apiUrl,pageNumber);
 
-//createMoreCard
-function renderHotel(data){
+// Function to create a single hotel card
+function createHotelCard(item) {
+  const boxPackage = document.createElement("div");
+  boxPackage.className = "box-package";
 
-    data.forEach(item=>{
-        let totalHotel=oneHotelCard(item);
-        boxPackageContainer.appendChild(totalHotel);
+  const imagePackage = document.createElement("div");
+  imagePackage.className = "image-package";
+
+  const imageHo = document.createElement("img");
+  imageHo.className = "imageHotel";
+  imageHo.src = item.hotelPhoto;
+  imageHo.alt = item.name;
+
+  imagePackage.appendChild(imageHo);
+
+  const contentDiv = document.createElement("div");
+  contentDiv.className = "content";
+
+  const destinationsHotel = document.createElement("h3");
+  destinationsHotel.innerText = item.description;
+
+  contentDiv.appendChild(destinationsHotel);
+
+  const hotelPrice = document.createElement("h3");
+  hotelPrice.innerText = item.price;
+  contentDiv.appendChild(hotelPrice);
+
+  const countryHotel = document.createElement("p");
+  countryHotel.innerText = item.country;
+  contentDiv.appendChild(countryHotel);
+
+  const anchorHotel = document.createElement("a");
+  anchorHotel.className = "btn";
+  anchorHotel.innerText = "Book now";
+
+  anchorHotel.addEventListener("click", function () {
+    window.location.href = "payment.html";
+  });
+
+  contentDiv.appendChild(anchorHotel);
+
+  boxPackage.appendChild(imagePackage);
+  boxPackage.appendChild(contentDiv);
+
+  return boxPackage;
+}
+
+// Render fetched hotel data
+async function renderHotelData() {
+  try {
+    const hotelData = await fetchHotels(apiUrl);
+    mainData = hotelData; // Update mainData with fetched data
+
+    // Clear previous content
+    boxPackageContainer.innerHTML = "";
+
+    // Render all hotel cards initially
+    hotelData.forEach((hotel) => {
+      const hotelCard = createHotelCard(hotel);
+      boxPackageContainer.appendChild(hotelCard);
     });
+  } catch (error) {
+    console.error("Error rendering hotel data:", error);
+  }
 }
 
+// console.log(mainData);
 
-//one hotel card.
+// Function to render hotel data based on selected country
+function renderHotelsByCountry(selectedCountry) {
+  const container = document.querySelector(".box-package-container");
+  container.innerHTML = ""; // Clear previous content
 
-function oneHotelCard(item){
-    let boxPackage=document.createElement("div");
-    boxPackage.className="box-package";
-
-    let imagePackage=document.createElement("div");
-    imagePackage.className="image-package";
-
-    let imageHo =document.createElement("img");
-    imageHo.className="imageHotel";
-    imageHo.src=item.hotelPhoto;
-    imageHo.alt=item.name;
-
-    imagePackage.appendChild(imageHo);
-
-    let contentDiv=document.createElement("div");
-    contentDiv.className="content";
-
-    let destinationsHotel=document.createElement("h3");
-    destinationsHotel.innerText=item.description;
-
-    contentDiv.appendChild(destinationsHotel);
-    
-    let hotelPrice=document.createElement("h3");
-    hotelPrice.innerText=item.price;
-    contentDiv.appendChild(hotelPrice);
-
-    let countryHotel=document.createElement("p");
-    countryHotel.innerText=item.country;
-    contentDiv.appendChild(countryHotel);
-
-    let anchorHotel=document.createElement("a");
-    anchorHotel.className="btn";
-    anchorHotel.innerText="Book now";
-
-    anchorHotel.addEventListener("click",function(){
-        window.location.href='payment.html';
+  // Check if a country is selected
+  if (selectedCountry === "") {
+    // If no country selected, render all data
+    mainData.forEach((hotel) => {
+      const hotelCard = createHotelCard(hotel);
+      container.appendChild(hotelCard);
     });
+  } else {
+    // Filter mainData based on the selected country
+    const filteredData = mainData.filter(
+      (hotel) => hotel.country === selectedCountry
+    );
 
-     contentDiv.appendChild(anchorHotel);
-
-    boxPackage.appendChild(imagePackage);
-    boxPackage.appendChild(contentDiv);
-
-    return boxPackage;
+    // Render hotel cards for the filtered data
+    filteredData.forEach((hotel) => {
+      const hotelCard = createHotelCard(hotel);
+      container.appendChild(hotelCard);
+    });
+  }
 }
 
+// Event listener for dropdown change
+const locationDropdown = document.getElementById("locationDropdown");
+locationDropdown.addEventListener("change", () => {
+  const selectedCountry = locationDropdown.value;
+  renderHotelsByCountry(selectedCountry);
+});
+
+// Function to sort hotel data by price (high to low)
+function sortHotelsByPriceHighToLow() {
+  mainData.sort((a, b) => parseFloat(b.price) - parseFloat(a.price));
+  renderHotelsByCountry(locationDropdown.value,`&_sort=price&_order=desc&`);
+}
+
+// Function to sort hotel data by price (low to high)
+function sortHotelsByPriceLowToHigh() {
+  mainData.sort((a, b) => parseFloat(a.price) - parseFloat(b.price));
+  renderHotelsByCountry(locationDropdown.value,`&_sort=price&_order=asc&`);
+}
+
+// Event listeners for sorting buttons
+const highToLowBtn = document.getElementById("high-to-low");
+const lowToHighBtn = document.getElementById("low-to-high");
+
+highToLowBtn.addEventListener("click", sortHotelsByPriceHighToLow);
+lowToHighBtn.addEventListener("click", sortHotelsByPriceLowToHigh);
+
+// Initial rendering with default selected country (optional)
+const defaultCountry = locationDropdown.value;
+renderHotelsByCountry(defaultCountry);
+
+// Call the function to render hotel data when the DOM content is loaded
+document.addEventListener("DOMContentLoaded", renderHotelData());
+
+
+//famous place
+// Function to render hotel data based on selected country
+
+
+///move
 let moveit = 0;
 // Append Load More button
 // const loadMoreBtn = document.createElement("span");
 const loadMoreBtn = document.getElementsByClassName("load-more")[0];
 loadMoreBtn.className = "btn";
 loadMoreBtn.innerText = ">";
+let pageNumber=1;
 loadMoreBtn.addEventListener("click", () => {
     pageNumber++;
     moveit-=500;
-    fetchHotels(apiUrl,"",pageNumber);
+    fetchHotels(apiUrl,pageNumber);
     boxPackageContainer.style.transform = `translate(${moveit}px)`;
     boxPackageContainer.style.transition = "transform 0.7s cubic-bezier(.22,.44,.06,1)";
-});
-
-
-
-//add functionality to drop down.
-
-//add sort to button.
-let highToLow = document.getElementById("high-to-low");
-highToLow.addEventListener("click", (e)=> {
-    fetchHotels(travelUrl, "_sort=price&_order=desc&");
-  
 });
