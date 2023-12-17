@@ -469,3 +469,37 @@ body {
       justify-content: start;
     }
   }
+  /* * Media query for screens between 100px and 1150px 
+@media screen and (min-width: 100px) and (max-width: 1150px) {
+    .head2 {
+        padding: 3px 0;
+    }
+
+    .head2 .head3 .heads {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .head2 .logo {
+        font-size: 1.2em;
+        margin-left: 10px;
+        padding-left: 30px;
+    }
+
+    .footermain {
+        flex-direction: column;
+        gap: 20px;
+        margin: 30px auto;
+    }
+
+    .contensection {
+        width: 100%;
+    }
+
+    .iconsection {
+        width: 100%;
+        justify-content: start;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+} */
