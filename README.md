@@ -19,6 +19,7 @@ This project is built using the following technologies:
 <img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/image/Screenshot%20(1157).png">
 
 ## Registration Page :-
+<img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/image/Screenshot%20(1158).png">
 ## Collaborators :-
 
   - Alipa (Team Lead)
