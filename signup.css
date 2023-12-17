@@ -59,6 +59,7 @@
 #signup-form-heading {
     font-weight: 600;
     font-size: 30px;
+    color: black;
     margin: auto;
 }
 
@@ -116,7 +117,7 @@ form {
 }
 
 #links>div:nth-child(3) {
-    background-color: #50ABF2;
+    background-color: #49a9f1;
 }
 
 #links>div:nth-child(3) img {
@@ -189,6 +190,27 @@ input {
 
 #input-taking a {
     color: grey;
+}
+/* Media Query for screens with a maximum width of 800px */
+@media all and (max-width: 800px) {
+    #signup-form {
+        width: 400px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #login-form-heading {
+        text-align: center;
+        margin: auto;
+    }
+
+    #links > div {
+        width: 100%;
+    }
+
+    #form-text span {
+        width: 100%;
+    }
 }
 
 /* ----------------Footer styling----------------- */
