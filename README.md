@@ -17,6 +17,7 @@ This project is built using the following technologies:
 <img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/image/admin1.png">
 <img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/image/admin2.png">
 <img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/image/admin3.png">
+<img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/image/admin4.png">
 
 ## login Page :-
 
@@ -25,6 +26,8 @@ This project is built using the following technologies:
 
 ## Registration Page :-
 <img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/image/Screenshot%20(1158).png">
+
+## Hotel Booking :-
 
 ## Footer :-
 <img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/image/footer.png">
