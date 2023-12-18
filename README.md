@@ -36,7 +36,7 @@ It includes a logo and a menu icon for mobile devices.
 <img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/image/admin4.png">
 <img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/image/admin5.jpg">
 
-## login Page (Alipa fw28_200)  :-
+## Login Page (Alipa fw28_200)  :-
 Key Features :-
  <ul>
         <li>Users can log in using a standard email and password combination.</li>
@@ -57,7 +57,7 @@ Key Features :-
        <li>Social Media Integration: Seamlessly register using popular social media accounts such as Facebook, Google, and Twitter.</li>
        <li>Clear Navigation: Intuitive links guide existing users to the login page for quick access.</li>
        <li>Secure Database Integration: User information is securely stored in the Voyawander database.</li>
-</ul>ul>
+</ul>
 
 <img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/image/Screenshot%20(1158).png">
 
@@ -70,7 +70,6 @@ Key Features :-
 - Contact the Voyawander team for inquiries.
 - User authentication and login functionality.
 
-  
 <img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/image/hotel.jpg">
 
 
@@ -97,6 +96,20 @@ Key Features :-
 <img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/image/dest2.png">
 
 ## Payment Page :-
+<ul>
+      <li>Payment Method Options:
+      <li>Diverse payment methods catered to user preferences.</li>
+      <li> Buttons for UPI, Debit Card, Credit Card, Simpl, Wallets, Internet Banking, EMI, and Cash On Delivery.</li>
+      <li>User-friendly interface for selecting the preferred payment mode.</li>
+      <li>Dynamic Payment Method Display:</li>
+      <li>An interactive section that dynamically displays relevant fields based on the selected payment method.</li>
+      <li>Ensures a smooth and personalized payment process.</li>
+      <li> Integration:
+        Seamless integration with external payment gateways to ensure secure transactions.
+        Implementation of security measures for user data protection.
+        </li>
+    </ul>
+
 
 <img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/image/payment.png">
 
