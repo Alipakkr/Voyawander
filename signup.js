@@ -46,6 +46,6 @@ async function postData(url){
 submitButton.addEventListener("click",(e)=>{
     e.preventDefault();
     postData(userUrl);
-    alert("Login successfull");
+    alert("Signup successfull");
 })
 
