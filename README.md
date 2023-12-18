@@ -36,7 +36,7 @@ It includes a logo and a menu icon for mobile devices.
 <img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/image/admin4.png">
 <img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/image/admin5.jpg">
 
-## login Page  :-
+## login Page (Alipa fw28_200)  :-
 Key Features :-
  <ul>
         <li>Users can log in using a standard email and password combination.</li>
@@ -49,7 +49,7 @@ Key Features :-
       </ul>
 <img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/image/Screenshot%20(1157).png">
 
-## Registration Page :-
+## Registration Page  (Alipa fw28_200)  :-
 
 Key Features :-
 <ul>
