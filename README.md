@@ -27,7 +27,8 @@ This project is built using the following technologies:
 - Explore the homepage for exciting travel information.
 - Navigate to specific sections like Hotels, Flights, and Community.
 - Book your next adventure and enjoy exclusive offers.
-
+- The website features a responsive navigation bar with links to Home, About Us, Hotels, Flights, Contact Us, and Login pages.
+It includes a logo and a menu icon for mobile devices.
   
 <img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/image/admin1.png">
 <img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/image/admin2.png">
@@ -36,10 +37,18 @@ This project is built using the following technologies:
 <img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/image/admin5.jpg">
 
 ## login Page :-
-
-
 <img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/image/Screenshot%20(1157).png">
-
+- Users can log in using a standard email and password combination.
+- Social login options are available, including Facebook and Google authentication.
+Social Login:
+- Users can log in using their Facebook, Google, or Twitter accounts.
+Account Creation:
+- New users can create an account by providing their email and password.
+- A link to the account creation page is available on the login form.
+Footer Section:
+- The website includes a footer section with information about the company, "Voyagers."
+- Social Media Integration:
+Links to Instagram, LinkedIn, and Facebook profiles are provided in the footer.
 ## Registration Page :-
 <img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/image/Screenshot%20(1158).png">
 
