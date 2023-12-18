@@ -38,15 +38,15 @@ It includes a logo and a menu icon for mobile devices.
 
 ## login Page  :-
 Key Features :-
-   <ul>
-  <li>Users can log in using a standard email and password combination.</li>
- <li>Social login options are available, including Facebook and Google authentication.</li>
- <li>Social Login: Users can log in using their Facebook, Google, or Twitter accounts.</li>
-<li>Account Creation: New users can create an account by providing their email and password.</li>
-                  A link to the account creation page is available on the login form.</li>
-<li>Footer Section: The website includes a footer section with information about the company, "Voyagers."</li>
-<li>Social Media Integration: Links to Instagram, LinkedIn, and Facebook profiles are provided in the footer.</li>
-   </ul>ul>
+ <ul>
+        <li>Users can log in using a standard email and password combination.</li>
+        <li>Social login options are available, including Facebook and Google authentication.</li>
+        <li>Social Login: Users can log in using their Facebook, Google, or Twitter accounts.</li>
+        <li>Account Creation: New users can create an account by providing their email and password.</li>
+        <li>A link to the account creation page is available on the login form.</li>
+        <li>Footer Section: The website includes a footer section with information about the company, "Voyagers."</li>
+        <li>Social Media Integration: Links to Instagram, LinkedIn, and Facebook profiles are provided in the footer.</li>
+      </ul>
 <img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/image/Screenshot%20(1157).png">
 
 ## Registration Page :-
