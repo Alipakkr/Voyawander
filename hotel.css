@@ -19,19 +19,6 @@
 
 
 /* added css */
-/* ... (your existing styles) */
-
-/* Media query for smaller screens */
-/* ... (your existing styles) */
-
-/* Media query for smaller screens */
-/* ... (your existing styles) */
-
-/* Media query for smaller screens */
-/* ... (your existing styles) */
-
-/* Media query for smaller screens */
-
 /* added css */
 
 /* --------------ALIPA---------------- */
@@ -461,7 +448,7 @@ p {
     border: none;
     font-size: 1rem;
     color: var(--white);
-    background-color: var(--primary-color);
+    background-image: linear-gradient(90deg, #00adfd 0, #00c6fe 51%, #00e3fe);
     border-radius: 1rem;
     cursor: pointer;
     transition: 0.3s;
