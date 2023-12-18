@@ -50,12 +50,13 @@ Key Features :-
 <img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/image/Screenshot%20(1157).png">
 
 ## Registration Page :-
-<ul>
+
 Key Features :-
-<li>User-Friendly Interface: An intuitive and user-centric registration form ensures a straightforward sign-up process.</li>
-<li>Social Media Integration: Seamlessly register using popular social media accounts such as Facebook, Google, and Twitter.</li>
-<li>Clear Navigation: Intuitive links guide existing users to the login page for quick access.</li>
-<li>Secure Database Integration: User information is securely stored in the Voyawander database.</li>
+<ul>
+       <li>User-Friendly Interface: An intuitive and user-centric registration form ensures a straightforward sign-up process.</li>
+       <li>Social Media Integration: Seamlessly register using popular social media accounts such as Facebook, Google, and Twitter.</li>
+       <li>Clear Navigation: Intuitive links guide existing users to the login page for quick access.</li>
+       <li>Secure Database Integration: User information is securely stored in the Voyawander database.</li>
 </ul>ul>
 
 <img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/image/Screenshot%20(1158).png">
