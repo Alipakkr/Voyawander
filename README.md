@@ -36,26 +36,27 @@ It includes a logo and a menu icon for mobile devices.
 <img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/image/admin4.png">
 <img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/image/admin5.jpg">
 
-## login Page :-
-
+## login Page  :-
 Key Features :-
- Users can log in using a standard email and password combination.
- Social login options are available, including Facebook and Google authentication.
- Social Login: Users can log in using their Facebook, Google, or Twitter accounts.
-Account Creation: New users can create an account by providing their email and password.
-                  A link to the account creation page is available on the login form.
-Footer Section: The website includes a footer section with information about the company, "Voyagers."
-Social Media Integration: Links to Instagram, LinkedIn, and Facebook profiles are provided in the footer.
+   <ul>
+  <li>Users can log in using a standard email and password combination.</li>
+ <li>Social login options are available, including Facebook and Google authentication.</li>
+ <li>Social Login: Users can log in using their Facebook, Google, or Twitter accounts.</li>
+<li>Account Creation: New users can create an account by providing their email and password.</li>
+                  A link to the account creation page is available on the login form.</li>
+<li>Footer Section: The website includes a footer section with information about the company, "Voyagers."</li>
+<li>Social Media Integration: Links to Instagram, LinkedIn, and Facebook profiles are provided in the footer.</li>
+   </ul>ul>
 <img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/image/Screenshot%20(1157).png">
 
 ## Registration Page :-
-
+<ul>
 Key Features :-
-User-Friendly Interface: An intuitive and user-centric registration form ensures a straightforward sign-up process.
-Social Media Integration: Seamlessly register using popular social media accounts such as Facebook, Google, and Twitter.
-Clear Navigation: Intuitive links guide existing users to the login page for quick access.
-Secure Database Integration: User information is securely stored in the Voyawander database.
-
+<li>User-Friendly Interface: An intuitive and user-centric registration form ensures a straightforward sign-up process.</li>
+<li>Social Media Integration: Seamlessly register using popular social media accounts such as Facebook, Google, and Twitter.</li>
+<li>Clear Navigation: Intuitive links guide existing users to the login page for quick access.</li>
+<li>Secure Database Integration: User information is securely stored in the Voyawander database.</li>
+</ul>ul>
 
 <img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/image/Screenshot%20(1158).png">
 
