@@ -40,7 +40,7 @@ It includes a logo and a menu icon for mobile devices.
 <img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/image/Screenshot%20(1157).png">
 - Users can log in using a standard email and password combination.
 - Social login options are available, including Facebook and Google authentication.
-Social Login:
+ Social Login:
 - Users can log in using their Facebook, Google, or Twitter accounts.
 Account Creation:
 - New users can create an account by providing their email and password.
@@ -51,6 +51,16 @@ Footer Section:
 Links to Instagram, LinkedIn, and Facebook profiles are provided in the footer.
 
 ## Registration Page :-
+Key Features
+User-Friendly Interface: An intuitive and user-centric registration form ensures a straightforward sign-up process.
+
+Social Media Integration: Seamlessly register using popular social media accounts such as Facebook, Google, and Twitter.
+
+Clear Navigation: Intuitive links guide existing users to the login page for quick access.
+
+Secure Database Integration: User information is securely stored in the Voyawander database.
+
+
 <img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/image/Screenshot%20(1158).png">
 
 ## Hotel Booking :-
