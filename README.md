@@ -49,6 +49,7 @@ Footer Section:
 - The website includes a footer section with information about the company, "Voyagers."
 - Social Media Integration:
 Links to Instagram, LinkedIn, and Facebook profiles are provided in the footer.
+
 ## Registration Page :-
 <img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/image/Screenshot%20(1158).png">
 
