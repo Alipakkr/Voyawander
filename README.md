@@ -95,15 +95,15 @@ Key Features :-
 <img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/image/dest1.png">
 <img src="https://github.com/Alipakkr/Project-quasar-7896/blob/main/image/dest2.png">
 
-## Payment Page :-
+## Payment Page (Alipa fw28_200) :-
 <ul>
       <li>Payment Method Options:
-      <li>Diverse payment methods catered to user preferences.</li>
-      <li> Buttons for UPI, Debit Card, Credit Card, Simpl, Wallets, Internet Banking, EMI, and Cash On Delivery.</li>
-      <li>User-friendly interface for selecting the preferred payment mode.</li>
-      <li>Dynamic Payment Method Display:</li>
-      <li>An interactive section that dynamically displays relevant fields based on the selected payment method.</li>
-      <li>Ensures a smooth and personalized payment process.</li>
+      Diverse payment methods catered to user preferences.
+       Buttons for UPI, Debit Card, Credit Card, Simpl, Wallets, Internet Banking, EMI, and Cash On Delivery.>
+      User-friendly interface for selecting the preferred payment mode.</li>
+      <li>Dynamic Payment Method Display:
+        An interactive section that dynamically displays relevant fields based on the selected payment method.
+        Ensures a smooth and personalized payment process.</li>
       <li> Integration:
         Seamless integration with external payment gateways to ensure secure transactions.
         Implementation of security measures for user data protection.
