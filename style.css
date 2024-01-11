@@ -58,6 +58,10 @@
   margin-right: 20px;
 }
 
+.head2 span {
+  display: none;
+}
+
 /* <!-- main image container --> */
 .body1 {
   background: #e3f5ff;
@@ -85,17 +89,16 @@
   font-size: 1rem;
   border-radius: 30px;
   border: none;
-  background: linear-gradient(
-    to right,
-    rgba(3, 170, 254, 0.923),
-    rgb(0, 222, 255)
-  );
+  background: linear-gradient(to right,
+      rgba(3, 170, 254, 0.923),
+      rgb(0, 222, 255));
   padding: 10px 15px;
   margin-top: 15px;
   color: white;
   letter-spacing: 1px;
   cursor: pointer;
 }
+
 button {
   height: 48px;
   width: 180px;
@@ -157,6 +160,7 @@ button {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   background: white;
 }
+
 .dropdowndiv1 {
   /* border: 1px solid blue; */
   text-align: center;
@@ -170,11 +174,9 @@ button {
 }
 
 .dropdowndiv div:nth-child(4) {
-  background: linear-gradient(
-    to right,
-    rgba(3, 170, 254, 0.923),
-    rgb(0, 222, 255)
-  );
+  background: linear-gradient(to right,
+      rgba(3, 170, 254, 0.923),
+      rgb(0, 222, 255));
   border-radius: 10px;
   color: white;
   padding: 30px 70px;
@@ -188,11 +190,12 @@ button {
 }
 
 .body2 p {
-  font-size: large;
+  font-size: 20px;
   width: 70%;
   margin: auto;
   letter-spacing: 1px;
 }
+
 /* boxes */
 /* .maindiv {
   display: flex;
@@ -210,9 +213,11 @@ button {
   margin-top: 70px;
   gap: 30px;
 }
+
 .material-symbols-outlined {
   height: 100px;
 }
+
 .body2__card {
   padding: 3rem 2rem;
   text-align: center;
@@ -230,20 +235,16 @@ button {
   margin-bottom: 2rem;
   font-size: 3rem;
   color: var(--white);
-  background: linear-gradient(
-    to right,
-    rgba(3, 170, 254, 0.923),
-    rgb(0, 222, 255)
-  );
+  background: linear-gradient(to right,
+      rgba(3, 170, 254, 0.923),
+      rgb(0, 222, 255));
   border-radius: 100%;
 }
 
 .body2__card:nth-child(2) span {
-  background: linear-gradient(
-    to right,
-    rgba(3, 170, 254, 0.923),
-    rgb(0, 222, 255)
-  );
+  background: linear-gradient(to right,
+      rgba(3, 170, 254, 0.923),
+      rgb(0, 222, 255));
 }
 
 .body2__card:nth-child(3) span {
@@ -257,11 +258,9 @@ button {
   /* Set the background-clip to text */
   background-clip: text;
   /* Apply gradient as background-image */
-  background-image: linear-gradient(
-    to right,
-    rgba(3, 170, 254, 0.923),
-    rgb(0, 222, 255)
-  );
+  background-image: linear-gradient(to right,
+      rgba(3, 170, 254, 0.923),
+      rgb(0, 222, 255));
   /* Use transparent text color to allow the gradient to show through */
   -webkit-background-clip: text;
   color: transparent;
@@ -270,6 +269,131 @@ button {
 .body2__card p {
   color: var(--text-light);
   line-height: 1.75rem;
+}
+
+/* responsive  */
+/* Media query for screens between 100px and 1150px */
+@media screen and (min-width: 100px) and (max-width: 1150px) {
+  .header1 {
+    font-size: 12px;
+    padding: 3px;
+
+  }
+
+  .head2 {
+    padding: 3px 0;
+
+  }
+
+  .head2 .head3 .heads {
+    padding: 15px;
+    font-size: 16px;
+    display: none;
+  }
+
+  .head2 .logo a {
+    font-size: 1.2em;
+    margin-left: 10px;
+    padding-left: 30px;
+  }
+
+  .headertext{
+    margin: auto auto auto -60%;
+    width: 100%;
+  }
+  .body1 .headertext h1 {
+    margin-top: 200px;
+    font-size: 2.5rem;
+  }
+
+  .body1 .headertext p {
+    font-size: 14px;
+    line-height: 25px;
+    padding-right: 20px;
+  }
+
+  .body1 .headertext button {
+    font-size: 0.8rem;
+    padding: 8px 12px;
+    margin-top: 10px;
+  }
+
+  .head2 span {
+    display: block;
+    margin-top: 24px;
+    margin-right: 26px;
+    /* background:black; */
+
+  }
+
+  .button {
+    height: 40px;
+    width: 150px;
+  }
+
+  .headimgdiv {
+    padding-left: 20%;
+    margin: -40px auto auto auto ;
+    width: 100%;
+   
+  }
+
+  .headerphoto1 img {
+    border-radius: 600px;
+    size: 30px;
+    height: 250px;
+    width: 170px;
+   
+  }
+
+  /* .headerphoto1 img {
+    top: 70px;
+    left: 150px;
+  } */
+  .headerphoto2 img {
+    height: 220px;
+    width: 163px;
+    margin-left: -95%;
+    margin-top: -40px;
+   
+  }
+
+
+  .body2 {
+    padding-top: 350px;
+    font-size: 20px;
+  }
+
+  .body2 p {
+    width: 90%;
+  }
+
+  .body2__grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .body2__card {
+    width: 80%;
+  }
+
+
+  .alipa .dropdowndiv {
+    /* justify-content: start; */
+    margin-left: -264px;
+    margin-top: 200px;
+    width: 311px;
+    flex-direction: column;
+  }
+  .alipa{
+margin-bottom: 20%;
+  }
+   .dropdowndiv{
+  width: 80%;
+  margin: auto;
+
+  }
+
 }
 
 /* .box {
@@ -292,31 +416,41 @@ button {
   margin: 20px;
   justify-content: space-between;
 }
+
 .mainsection3 h1 {
+  padding-top: 30px;
   font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 20px;
   justify-content: space-between;
   font-size: 50px;
 }
+
 .mainsection3 p {
   font-family: Arial, Helvetica, sans-serif;
   justify-content: space-between;
-  font-size: 25px;
+  font-size: 20px;
 }
+
 #worldMap {
+  padding-top: 30px;
   max-width: 100%;
   height: auto;
   margin-top: 40px;
   margin-bottom: 40px;
 }
+
 .card-container2 {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  padding-top: 30px;
   margin-top: 20px;
+  padding-bottom: 30px;
 }
+
 .card {
-  /* width: 400px; */
+
+  width: 400px;
   border: 1px solid #ccc;
   border-radius: 30px;
   margin: 10px;
@@ -324,12 +458,15 @@ button {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
 }
+
 .card:hover {
   transform: scale(1.05);
 }
+
 .card-content {
   padding: 15px;
 }
+
 .card-title {
   font-size: 24px;
   font-weight: bold;
@@ -337,18 +474,22 @@ button {
   text-align: center;
   font-family: cursive;
 }
+
 .card-description {
   font-size: 0.9em;
   color: #555;
   text-align: center;
 }
+
 .card img {
   width: 100%;
   height: 250px;
   object-fit: cover;
-  border-radius: 30px;
+  /* border-radius: 30px; */
 }
-.btn {
+
+
+#btn {
   background-image: linear-gradient(90deg, #00adfd 0, #00c6fe 51%, #00e3fe);
   border-radius: 40px;
   color: #fff;
@@ -362,21 +503,26 @@ button {
   margin: 10px;
   border: none;
 }
+
 .price {
   font-size: 18px;
   /* padding-left: 2px; */
   font-weight: bold;
 }
+
 .bookprice {
   display: flex;
 }
+
 .priceBox {
   margin-right: 90px;
 }
+
 .starts {
   color: gray;
   font-size: 13px;
 }
+
 #more {
   align-items: center;
   text-align: center;
@@ -384,6 +530,7 @@ button {
 }
 
 #explore {
+  padding-top: 30px;
   background-image: linear-gradient(90deg, #00adfd 0, #00c6fe 51%, #00e3fe);
   border-radius: 10px;
   justify-content: center;
@@ -391,13 +538,12 @@ button {
   width: 150px;
   padding: 15px;
   border: none;
- 
+
 }
-#explore:hover{
-  transform: scale(1.05);
-}
+
 /* --------------KUNDAN   section5---------------- */
 .MountainSection {
+  padding-top: 40px;
   width: 100%;
   height: 450px;
   margin-top: 15px;
@@ -463,11 +609,9 @@ button {
   font-size: 1rem;
   border-radius: 30px;
   border: none;
-  background: linear-gradient(
-    to right,
-    rgba(3, 170, 254, 0.923),
-    rgb(0, 222, 255)
-  );
+  background: linear-gradient(to right,
+      rgba(3, 170, 254, 0.923),
+      rgb(0, 222, 255));
   padding: 10px;
   color: white;
   letter-spacing: 1px;
@@ -475,7 +619,8 @@ button {
   width: 160px;
   height: 50px;
 }
-.button:hover{
+
+.button:hover {
   transform: scale(1.01);
 }
 
@@ -502,6 +647,7 @@ button {
   width: fit-content;
   height: 40px;
 }
+
 .imageiconf {
   height: 38px;
 }
@@ -535,7 +681,65 @@ button {
   display: flex;
 }
 
-/* -------------------------Hover Alipa body2-card --------------------------/ */
-.body2__card:hover{
+/* Alipa body2-card */
+.body2__card:hover {
   transform: scale(1.08)
+}
+
+
+
+/* Kundan Section and footer responsiveness */
+
+@media screen and (min-width: 100px) and (max-width: 1150px) {
+  .MountainSection {
+    width: 100%;
+    margin: auto;
+    height: 400px;
+  }
+
+  .fullForm {
+    margin: auto;
+  }
+
+  .formpart {
+    margin: auto;
+  }
+
+  .Formpara {
+    margin: auto;
+    width: 52%;
+    display: none;
+  }
+
+  .TouchForm {
+    margin-top: -60px;
+    flex-direction: column;
+    gap: 40PX;
+  }
+
+  .textarea {
+    padding-top: 20PX;
+  }
+
+  .footer {
+    height: auto;
+  }
+
+  .footermain {
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+  }
+
+  .contensection {
+    width: 100%;
+    margin-top: 80px;
+  }
+
+  .iconsection {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    justify-content: start;
+  }
 }

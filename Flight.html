@@ -4,14 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Voyawander Flight</title>
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="Flight.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 
 <body>
+  <!-- navbar -->
   <div class="head2">
-    <div class="logo"><a style="color: black;" href="index.html"> Voyawander</a></div>
+    <div class="logo"><a href="index.html"> Voyawander</a></div>
     <div class="head3">
       <a class="heads" href="index.html">Home</a>
       <a class="heads" href="about.html">About Us</a>
@@ -20,12 +24,51 @@
       <a class="heads" href="contact.html">Contact Us</a>
       <a class="heads" href="login.html">Login</a>
     </div>
+
+    <span class="material-symbols-outlined">
+      menu
+    </span>
   </div>
 
   <header class="section__container header__container">
     <h1 class="section__header">Find And Book<br />A Great Experience</h1>
-    <img src="https://img.happyeasygo.com/oss/ossuploadfile/advertising/2021/11/11/7b1b0a40fe39470a8166252f994d702b.jpg"
-      alt="header" />
+    <!-- <img src="https://img.happyeasygo.com/oss/ossuploadfile/advertising/2021/11/11/7b1b0a40fe39470a8166252f994d702b.jpg"
+      alt="header" /> -->
+
+    <!-- slider start here  -->
+    <div id="slider">
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="https://wowslider.com/sliders/demo-27/data1/images/aircraft537963.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://www.futuretravelexperience.com/wp-content/uploads/2021/10/Etihad-sustainable-flight.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://image.khaleejtimes.com/?uuid=b3e11de8-80d3-4d6e-b836-d37b2158c3ae&function=cropresize&type=preview&source=false&q=75&crop_w=0.80238&crop_h=0.99999&x=0.09881&y=0&width=1200&height=675" />
+          </div>
+          <!-- <div class="swiper-slide">
+              <img src="https://facts.net/wp-content/uploads/2023/07/12-facts-about-flydubai-1690170386.jpeg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://www.flydubai.com/en/media/Flight-status-flydubai-2x-668x460_tcm8-168029.jpg" />
+            </div> -->
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+    <!-- slider end here -->
   </header>
 
   <section class="section__container booking__container">
@@ -87,7 +130,7 @@
       </div>
     </form>
     <div class="buttonClass">
-      <button class="btn"><i class="ri-search-line"></i>Search</button>
+      <a href="flightpage.html"> <button class="btn"><i class="ri-search-line"></i>Search</button></a>
     </div>
 
   </section>
@@ -136,7 +179,7 @@
         <h2 class="section__header">
           Travel to make memories all around the world
         </h2>
-        <button class="view__all">View All</button>
+        <a href="destine.html"> <button class="view__all">View All</button></a>
       </div>
       <div class="memories__grid">
         <div class="memories__card">
@@ -232,5 +275,7 @@
 
   </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="./flight.js"></script>
 
 </html>

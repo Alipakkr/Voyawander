@@ -2,15 +2,24 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-   
-  }
-  
-.head2 {
 
+}
+
+/* --------------ALIPA---------------- */
+.header1 {
+    color: black;
+    padding: 5px;
+    font-size: 15px;
+    text-align: center;
+    background: #00a3ff;
+    color: white;
+}
+
+.head2 {
+    background: #e3f5ff;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ddf3ff;
     padding: 5px 0;
     /* margin-bottom: 1.5rem; */
     /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
@@ -38,9 +47,8 @@
     padding-left: 50px;
     color: black;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  }
-  
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
 
 .head2 .head3 {
     width: 60%;
@@ -50,16 +58,24 @@
     margin-right: 20px;
 }
 
+.head2 span {
+    display: none;
+}
+
+/* ----------------sign form---------- */
 #signup-form {
     width: 500px;
     margin: auto;
     text-align: center;
+    padding-top: 30px;
 }
 
 #signup-form-heading {
     font-weight: 600;
     font-size: 30px;
+    color: black;
     margin: auto;
+
 }
 
 form {
@@ -72,7 +88,7 @@ form {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 #links>div {
@@ -81,7 +97,7 @@ form {
     height: 50px;
     border-radius: 30px;
     justify-content: space-between;
-    padding: 10px 15px 10px 0px;
+    padding: 10px 12px 10px 2px;
     align-items: center;
     margin: 10px;
     color: white;
@@ -93,7 +109,7 @@ form {
 
 #links>div:nth-child(1) img {
     width: 50px;
-    height: 50px;
+    height: 45px;
     border-radius: 30px;
 }
 
@@ -110,13 +126,13 @@ form {
     width: 65px;
     height: 42px;
     border-radius: 30px;
-    padding: 12px 20px;
+    padding: 10px 20px;
     background-color: white;
     margin-left: 1px;
 }
 
 #links>div:nth-child(3) {
-    background-color: #50ABF2;
+    background-color: #49a9f1;
 }
 
 #links>div:nth-child(3) img {
@@ -124,6 +140,11 @@ form {
     height: 50px;
     border-radius: 30px;
     padding-left: 10px;
+}
+
+#links a {
+    color: white;
+    text-decoration: none;
 }
 
 #form-text {
@@ -177,7 +198,7 @@ input {
     border-radius: 30px;
     border: 0px;
     margin-top: 50px;
-    background-color: #3C07FF;
+    background-image: linear-gradient(90deg, #00adfd 0, #00c6fe 51%, #00e3fe);
     color: white;
     font-size: 20px;
     letter-spacing: 2px;
@@ -189,6 +210,28 @@ input {
 
 #input-taking a {
     color: grey;
+}
+
+/* Media Query for screens with a maximum width of 800px */
+@media all and (max-width: 800px) {
+    #signup-form {
+        width: 400px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #login-form-heading {
+        text-align: center;
+        margin: auto;
+    }
+
+    #links>div {
+        width: 100%;
+    }
+
+    #form-text span {
+        width: 100%;
+    }
 }
 
 /* ----------------Footer styling----------------- */
@@ -227,4 +270,68 @@ input {
     align-items: baseline;
     margin-top: 170px;
     width: 50%;
+}
+
+
+/* responsiveness of footer section */
+
+@media screen and (min-width: 100px) and (max-width: 1150px) {
+    .logo a {
+        margin-left: -40%;
+    }
+
+    .footer {
+        height: auto;
+    }
+
+    .footermain {
+        display: flex;
+        height: fit-content;
+        flex-direction: column;
+    }
+
+    .contensection {
+        margin-top: 80px;
+        width: 100%;
+    }
+
+    .iconsection {
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        justify-content: start;
+    }
+}
+/* responsive  */
+/* Media query for screens between 100px and 1150px */
+@media screen and (min-width: 100px) and (max-width: 1150px) {
+    .header1 {
+      font-size: 12px;
+      padding: 3px;
+  
+    }
+  
+    .head2 {
+      padding: 3px 0;
+  
+    }
+  
+    .head2 .head3 .heads {
+      padding: 15px;
+      font-size: 16px;
+      display: none;
+    }
+  
+    .head2 .logo a {
+      font-size: 1.2em;
+      margin-left: 10px;
+      padding-left: 30px;
+    }
+  .head2 span {
+      display: block;
+      margin-top: 24px;
+      margin-right: 26px;
+      /* background:black; */
+  
+    }
 }

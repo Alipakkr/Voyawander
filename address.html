@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address</title>
+    <link rel="stylesheet" href="./address.css">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <div class="head2">
+        <div class="logo"><a href="index.html"> Voyawander</a></div>
+        <div class="head3">
+            <a class="heads" href="index.html">Home</a>
+            <a class="heads" href="about.html">About Us</a>
+            <a class="heads" href="hotel.html">Hotels</a>
+            <a class="heads" href="Flight.html">Flights</a>
+            <a class="heads" href="contact.html">Contact Us</a>
+            <a class="heads" href="login.html">Login</a>
+        </div>
+
+        <span class="material-symbols-outlined">
+            menu
+        </span>
+    </div>
+    <div id="main" class="wrapper">
+        <form id="addressForm">
+            <div class="singleRow">
+                <div>
+                    <p>Name <span>*</span></p>
+                    <input id="name" type="text" placeholder="Enter your name" required>
+                </div>
+                <div>
+                    <p>Mobile No. <span>*</span></p>
+                    <input id="mobile" type="text" placeholder="Enter your Mobile no." required>
+                </div>
+            </div>
+            <div>
+                <p>Address (Area & Street) <span>*</span></p>
+                <input id="area" type="text" placeholder="Type your Address" required>
+            </div>
+            <div class="singleRow">
+                <div>
+                    <p>Landmark <span>*</span></p>
+                    <input id="landmark" type="text" placeholder="Enter Landmark" required>
+                </div>
+                <div>
+                    <p>Pincode <span>*</span></p>
+                    <input id="pincode" type="text" placeholder="Enter pincode" required>
+                </div>
+            </div>
+            <div>
+                <p>Email <span>*</span></p>
+                <input id="email" type="text" placeholder="Enter your Mail Address" required>
+            </div>
+            <div>
+                <select name="address" id="addressType">
+                    <option value="">Address Type</option>
+                    <option value="home">Home</option>
+                    <option value="office">Office</option>
+                    <option value="others">Others</option>
+                </select>
+            </div>
+            <input type="checkbox">
+            <p class="inline"> I want to subscribe to Voyawander Travels</p>
+            <input type="submit" value="Confirm">
+        </form>
+
+
+        <div id="orderSummary">
+            <h1> Hotel Booking <span id="totalitem"></span></h1>
+            <div>
+                <p class="gray">One Night charge</p>
+                <p id="totalmrp">$220/person</p>
+            </div>
+            <div>
+                <p class="gray">Days</p>
+                <p id="payday">3 * 220$</p>
+            </div>
+            <div>
+                <p class="gray">Total Discounts</p>
+                <p id="totaldiscount" class="green">Null</p>
+            </div>
+            <hr>
+            <div>
+                <h2>Payable Amount</h2>
+                <h2 id="paytm"> $660 </h2>
+            </div>
+            <hr>
+            <h2 style="color: deepskyblue;">Press Confirm for payment. </h2>
+        </div>
+    </div>
+    <!---------------- Footer section -------------------->
+  <div class="footer">
+    <div class="footermain">
+      <div class="contensection">
+        <h1>Voyagers</h1>
+        <p style="margin-top: 10px">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Reprehenderit animi possimus, quos error nostrum officiis
+          blanditiis, sequi recusandae repellendus suscipit aspernatur.
+          Perspiciatis officiis debitis similique.
+        </p>
+      </div>
+      <div class="iconsection">
+        <div>
+          <a href="https://www.instagram.com/"><img class="imageicon" src="insta.png" alt="icon" /></a>
+        </div>
+        <div>
+          <a href="https://www.linkedin.com/checkpoint/lg/sign-in-another-account"><img class="imageicon"
+              src="linkedin.png" alt="icon" /></a>
+        </div>
+        <div>
+          <a href="https://www.facebook.com/"><img class="imageiconf" src="facebook.png" alt="icon" /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="./address.js"></script>
+
+</html>
