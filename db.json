@@ -67070,20 +67070,6 @@
       "hotelPhoto": "https://th.bing.com/th/id/OIP.GkoTdzzaQYB54t3acT5qsQHaE7?rs=1&pid=ImgDetMain"
     },
     {
-      "id": 41,
-      "name": "Cologne",
-      "country": "Germany",
-      "description": "City of the Cologne Cathedral",
-      "price":"2688",
-      "attractions": [
-        "Cologne Cathedral",
-        "Hohenzollern Bridge",
-        "Ludwig Museum"
-      ],
-      "image": "https://th.bing.com/th/id/OIP.3ZKeYaQY-BKhm8qJPpnw2wHaE7?rs=1&pid=ImgDetMain",
-      "hotelPhoto": ""
-    },
-    {
       "id": 42,
       "name": "Cape Town",
       "country": "South Africa",
